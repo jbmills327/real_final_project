@@ -1,0 +1,66 @@
+<!-- This is fantasy level1 HTML -->
+<div class="fluid-container ">
+    <!-- These are the thumbnails for the level 1 books -->
+    <div class="row holdMyBook" ng-hide="main.hideLevelOneThumbs">
+        <!-- This is the thumbnail for Goblin Quest -->
+        <div class="col-xs-12 col-md-3 bookImage">
+            <a class="thumbnail" href="javascript:void(0)" ng-click="main.heresTheGoblin()">
+                <img src="./css/resources/goblinMinion.jpg" alt="Goblin">
+            </a>
+        </div>
+        <!-- End Thumbnail for Goblin Quest -->
+
+        <!-- This is the thumbnail for book 2 -->
+        <div class="col-xs-12 col-md-3 bookImage">
+            <a class="thumbnail" href="#">
+                <img src="./css/resources/comingSoon.png" alt="Coming Soon">
+            </a>
+        </div>
+        <!-- End thumbnail for book 2 -->
+
+        <!-- This is the thumbnail for book 3 -->
+        <div class="col-xs-12 col-md-3 bookImage">
+            <a class="thumbnail" href="#">
+                <img src="./css/resources/comingSoon.png" alt="Coming Soon">
+            </a>
+        </div>
+    </div>
+    <!-- End thumbnail for book 3 -->
+
+
+
+    <!-- This is the div that will hold the "book" for Goblin Quest -->
+
+
+    <!-- This is also page one of Goblin Quest -->
+
+    <div ng-show="main.hideLevelOneThumbs" class="goblinQuestBook" ng-repeat="path in main.paths | filter:main.isActive">
+
+        <!-- This is the "X" button to take the user back to the home page -->
+        <button type="button" class="close" ng-click="main.heresTheGoblin()" name="button">&times;</button>
+        <h2 class="title">GOBLIN QUEST</h2>
+        <p>{{ path.description }} {{ path.uniqueId }}</p>
+
+        <!-- This is the button to activate TTS -->
+        <input class="playTTS" ng-click="main.speakTheText(path.description)" type='button' value='🔊 Play' />
+        <!-- Reset button to get back to page 0 -->
+        <button class="btn btn-danger reset" ng-click="main.resetPages(path.uniqueId)">Reset</button>
+        <!-- This is the button for the choice 1 -->
+        <img class="thunderGoblinOne" src="./css/resources/Thunder_Goblin.png" alt="Thunder Goblin" />
+        <!-- <img class="anotherGoblin" src="./css/resources/anotherGoblin.png" alt="Another Goblin" /> -->
+
+        <!-- The div that holds the button and text for choice 2 -->
+        <div class="choiceOne">
+            <h4>Do you want to:
+              <button type="button" ng-click="main.choose(path.uniqueId, 1)" class = "btn btn-primary" name="button">{{ path.choiceOne }}</button>
+            </h4>
+        </div>
+
+
+
+        <!-- This is the button for choice 2 -->
+        <div class="choiceTwo">
+            <h4>Do you want to:   <button type="button" ng-click="main.choose(path.uniqueId, 2)" class = "btn btn-primary" name="button">{{ path.choiceTwo }}</button></h4>
+        </div>
+    </div>
+</div>

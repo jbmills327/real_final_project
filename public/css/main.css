@@ -1,0 +1,362 @@
+body html {
+    height: 100%;
+}
+
+
+/*Style the header, full page landing page*/
+
+header {
+    position: relative;
+    width: 100vw;
+    /*height: 600px;*/
+    height: 100vh;
+    background-image: url(./resources/genericFantasy.jpg);
+    background-size: cover;
+    /*background-size: auto 600px;*/
+    /*opacity: .7;*/
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+/*Styling for dragon for parallax effect*/
+
+.dragon {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./resources/dragonFlying.png);
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    /*width: 35%;
+    height: 35%;*/
+    top: 30%;
+    left: 60%;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.large-dragon {
+    background-position: center;
+    background-size: cover;
+    background-image: url(./resources/largeDragon.png);
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    /*width: 70%;
+    height: 90%;*/
+    top: 98%;
+    left: 2%;
+}
+
+
+/*Style the hamburger button that open side slide menu*/
+
+.openMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 3px solid black;
+    z-index: 1;
+}
+
+
+/*Turns hamburger white and background black when hover*/
+
+.openMenu:hover {
+    color: white;
+    background-color: black;
+}
+
+
+/*Styling the quote div*/
+
+.quote {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(45deg, black, #ababba, black);
+    vertical-align: middle;
+    text-align: center;
+    border: 5px solid black;
+}
+
+
+/*styling for "About Us" Section.*/
+
+.aboutUs {
+    color: black;
+    text-align: center;
+    text-shadow: 2px 2px 1px lightgray, 4px 4px 1px black;
+    font-family: fantasy, sans-serif;
+}
+
+.carousel {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+
+/*styling the h1 element in the quote div*/
+
+.quote h1 {
+    position: relative;
+    padding: 15px 0 0 0;
+    margin: 0;
+    color: white;
+    font-family: fantasy;
+    font-weight: bolder;
+    text-shadow: 3px 3px 2px black;
+}
+
+
+/*Styling the h5 element in the quote div*/
+
+.quote h5 {
+    position: relative;
+    text-align: right;
+    margin: 0 30% 20px 0;
+}
+
+
+/*Styling the footer element*/
+
+footer {
+    border-top: 5px solid black;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    background-image: url(./resources/genericFantasy.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /*background-color: black;*/
+    font-size: 3em;
+    text-align: center;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    color: lightgray;
+}
+
+footer a {
+    color: #c40522;
+    padding-left: .25em;
+    text-shadow: 1px 1px 1px lightgray;
+}
+
+
+/*.fluffy {
+    position: absolute;
+    text-align: left;
+    bottom: 0;
+}*/
+
+
+/* The side navigation menu */
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    /*color: #818181;*/
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover, .offcanvas a:focus {
+    /*color: #f1f1f1;*/
+    color: #818181;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+    /*padding: 20px;*/
+}
+
+#main h1 {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    background: linear-gradient(to right, #c40522, #a5727a, #c40522);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: glideIn 300ms ease-in 1s;
+}
+
+
+/*setting size for carousel photos*/
+
+.carouselPhotos {
+    width: 100vw;
+}
+
+
+/*.item {
+    height: 450px;
+}*/
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/*Media query to adjust dragon for devices with medium screens*/
+
+@media(max-width: 768px) {
+    .dragon {
+        background-position: center;
+        background-size: cover;
+        background-image: url(./resources/dragonFlying.png);
+        position: absolute;
+        width: 250px;
+        height: 175px;
+        top: 30%;
+        left: 50%;
+        /*transform: translate(-50%, -50%);*/
+    }
+    .large-dragon {
+        background-position: center;
+        background-size: cover;
+        background-image: url(./resources/largeDragon.png);
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        /*width: 70%;
+        height: 90%;*/
+        top: 98%;
+        left: 2%;
+    }
+    footer {
+        border-top: 5px solid black;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        background-color: black;
+        /*font-size: 10px;*/
+        text-align: center;
+        /*padding-right: 2%;
+        padding-bottom: 1%;*/
+        color: lightgray;
+    }
+    footer a {
+        font-size: 20px;
+        color: #c40522;
+        /*position: absolute;*/
+        /*padding-left: .5em;
+        bottom: 1em;*/
+    }
+    footer h4 {
+        font-size: 20px;
+        /*position: absolute;*/
+        /*bottom: 1em;*/
+    }
+    footer h2 {
+        font-size: 20px;
+    }
+}
+
+
+/*Media query to adjust dragon for devices with smaller screens*/
+
+@media(max-width: 440px) {
+    .dragon {
+        background-position: center;
+        background-size: cover;
+        background-image: url(./resources/dragonFlying.png);
+        position: absolute;
+        width: 250px;
+        height: 175px;
+        top: 30%;
+        left: 40%;
+        /*transform: translate(-50%, -50%);*/
+    }
+    .large-dragon {
+        background-position: center;
+        background-size: cover;
+        background-image: url(./resources/largeDragon.png);
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        /*width: 70%;
+        height: 90%;*/
+        top: 98%;
+        left: 2%;
+    }
+    footer {
+        border-top: 5px solid black;
+        position: relative;
+        width: 100vw;
+        height: auto;
+        background-color: black;
+        /*font-size: 10px;*/
+        text-align: center;
+        /*padding-right: 2%;
+        padding-bottom: 1%;*/
+        color: lightgray;
+    }
+    footer a {
+        font-size: 20px;
+        color: #c40522;
+        /*position: absolute;*/
+        /*padding-left: .5em;
+        bottom: 1em;*/
+    }
+    footer h4 {
+        font-size: 20px;
+        /*position: absolute;*/
+        /*bottom: 1em;*/
+    }
+    footer h2 {
+        font-size: 20px;
+    }
+}
