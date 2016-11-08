@@ -1,19 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="module.login">
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/landing.css" type="text/css">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
+    <link rel="stylesheet" href="./css/landing.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <!-- This script tage is for routing -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
     <title>Adventure Reading Login</title>
 </head>
 
-<body>
+<body ng-controller="controller.login as login">
 
-    <form action="/index" method="get">
-        <button type="submit">Login</button>
+    <div class="authBox">
 
+    </div>
+    <form ng-submit="login.submit()">
+        <h3>EMAIL: </h3><input type="text" placeholder="email" ng-model="login.email" class="form-control">
+        <h3>PASSWORD: </h3><input type="password" placeholder="Password" ng-model="login.password" class="form-control">
+        <button class="btn btn-success btn-lrg" type="submit">Login</button>
     </form>
 
+
+    <script type="text/javascript" src="/module.login.js"></script>
 </body>
 
 </html>

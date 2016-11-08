@@ -9,7 +9,33 @@ body {
 }
 
 body form {
+    text-shadow: 6px, 6px, 6px, black;
+    color: white;
+    text-align: left;
     position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Eczar', serif;
+}
+
+body form button {
+    /*text-shadow: 6px, 6px, 6px, black;*/
+    color: white;
+    /*text-align: left;*/
+    position: absolute;
+    bottom: -40%;
+    left: 100%;
+    /*transform: translate(-50%, -50%);*/
+}
+
+.authBox {
+    position: absolute;
+    opacity: 0.6;
+    height: 55%;
+    width: 55%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

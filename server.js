@@ -2,15 +2,29 @@ var express = require('express'),
     // file relative to where our server.js is located
     routes = require('./routes'),
     bodyParser = require('body-parser'),
-    logger = require('morgan')('dev');
+    logger = require('morgan')('dev'),
+    mongoose = require("mongoose"),
+    sessions = require('client-sessions')({
+        cookieName: "heroes-session", // front-end cookie name, currently pulled from package.json, feel free to change
+        secret: 'DR@G0N$', // the encryption password : keep this safe
+        requestKey: 'session', // req.session,
+        duration: (86400 * 1000) * 7, // one week in milliseconds
+        cookie: {
+            ephemeral: false, // when true, cookie expires when browser is closed
+            httpOnly: true, // when true, the cookie is not accesbile via front-end JavaScript
+            secure: false // when true, cookie will only be read when sent over HTTPS
+        }
+    });
+
 // this is the same as:
 // logger = require('morgan');
 // logger('dev');
 
 var PORT = process.env.PORT || 3000;
-
+mongoose.connect("mongodb://localhost/adventure-reading");
 // create the express app
 var app = express();
+app.use(sessions);
 
 // mount our morgan logger middleware
 app.use(logger);
