@@ -50,14 +50,18 @@ module.exports = ({
         },
 
         register: (req, res) => {
+            console.log("Did I even get here?");
             // req.body gets data from front end and when it fires it is going to hit the pre save middleware
             var newUser = new User(req.body);
+            console.log(newUser);
             // Actually saves in database
             newUser.save((err, doc) => {
                 if (err) {
                     return res.send(err);
                 }
-                res.send(user);
+                console.log(doc);
+                res.send(doc);
+
             });
 
         },
