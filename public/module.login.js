@@ -1,12 +1,26 @@
 angular.module("module.login", [])
     .controller("controller.login", loginController);
 
-loginController.$inject = ["$http"]
+
+// angular.module("module.login")
+//     .config(anotherRouter);
+
+loginController.$inject = ["$http"];
+// anotherRouter.$inject = ["$routeProvider"];
+
+// function anotherRouter($routeProvider) {
+//     $routeProvider
+//         .when("/register", {
+//             templateUrl: "./html/register.html"
+//         })
+// }
+
 
 function loginController($http) {
     var login = this;
     login.greeting = "This is working";
     login.newUser = {};
+    login.hereItIs = false;
     login.submit = function() {
         $http({
             method: "POST",
@@ -36,5 +50,9 @@ function loginController($http) {
                 console.error(err);
             });
 
+    }
+
+    login.showTheStuff = function() {
+        login.hereItIs = !login.hereItIs;
     }
 }

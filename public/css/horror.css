@@ -1,0 +1,406 @@
+body {
+    height: 100%;
+    position: relative;
+}
+
+
+/*Styling the header*/
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./resources/scaryWoods.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#main .quoteOfTheDay {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #bc0505, #e09d9d, #bc0505);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Fredericka the Great", cursive;
+}
+
+#main .byLine {
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, #bc0505, #e09d9d, #bc0505);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Fredericka the Great", cursive;
+}
+
+.title {
+    position: absolute;
+    font-family: "Indie Flower", cursive;
+    /*color: #056817;*/
+    background: linear-gradient(to right, #056817, #72cc82, #056817);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+    top: 1%;
+    left: 20%;
+}
+
+
+/*This is the styling for the div that holds the thumbnails*/
+
+.bookImage {
+    top: 50vh;
+    left: 35%;
+    position: relative;
+    width: 200px;
+    /*height: 700px;*/
+    transform: translate(-50%, -50%);
+}
+
+
+/* Styling the anchor tags in the bookImage div*/
+
+.bookImage a {
+    box-shadow: 3px 3px 3px gray;
+}
+
+
+/*Styling the actual pages for the books*/
+
+.goblinQuestBook {
+    position: absolute;
+    background-image: url("./resources/paper.jpg");
+    background-size: cover;
+    /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
+    width: 75%;
+    height: 75%;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+
+/*Positioning the button within the reading pane*/
+
+.goblinQuestBook button {
+    position: absolute;
+    padding: 10px 10px 10px 20px;
+}
+
+
+/*Positioning the text withing the reading pane*/
+
+.goblinQuestBook p {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+
+/*Styling and positioning the text for choice 1 */
+
+.choiceOne {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    text-align: center;
+}
+
+
+/*Styling and positioning the button for choice 1*/
+
+.choiceOne button {
+    margin: 10px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+
+/*Styling and positioning the text for choice 2 */
+
+.choiceTwo {
+    position: absolute;
+    top: 75%;
+    left: 75%;
+    text-align: center;
+}
+
+.playTTS {
+    position: absolute;
+    top: 75%;
+    left: 45%;
+}
+
+.reset {
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    text-align: center;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+
+/*Styling and positioning the button for choice 2*/
+
+.choiceTwo button {
+    margin: 10px;
+    box-shadow: 3px 3px 3px lightgray;
+}
+
+.thunderGoblinOne {
+    position: absolute;
+    width: 168px;
+    height: 224px;
+    top: 20%;
+    left: 80%;
+    opacity: 0.7;
+}
+
+.anotherGoblin {
+    position: absolute;
+    width: 175px;
+    height: 224px;
+    top: 55%;
+    left: 30%;
+    opacity: 0.7;
+}
+
+
+/*Style the hamburger button that open side slide menu*/
+
+.openMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    z-index: 1;
+}
+
+
+/*Turns hamburger white and background black when hover*/
+
+.openMenu:hover {
+    color: lightgray;
+    background-color: black;
+}
+
+
+/*This is the styling to adjust for medium sized screens*/
+
+@media(max-width: 770px) {
+    .bookImage {
+        top: 50vh;
+        left: 20%;
+        position: relative;
+        width: 30%;
+        /*height: 700px;*/
+        transform: translate(-50%, -50%);
+    }
+    #main h1 {
+        font-size: 25px;
+        top: 50%;
+        left: 5%;
+    }
+    /*Styling the actual pages for the books*/
+    .goblinQuestBook {
+        position: absolute;
+        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        width: 100vw;
+        height: 70vh;
+        /*top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 7px;
+        box-shadow: 3px 3px 3px gray;*/
+    }
+    .title {
+        position: absolute;
+        font-family: "Indie Flower", cursive;
+        /*color: #056817;*/
+        background: linear-gradient(to right, #056817, #72cc82, #056817);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 5em;
+        top: 1%;
+        left: 20%;
+    }
+    .goblinQuestBook p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /*Styling and positioning the text for choice 1 */
+    .choiceOne {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        /*text-align: center;*/
+    }
+    /*Styling and positioning the button for choice 1*/
+    .choiceOne button {
+        /*margin: 10px;*/
+        box-shadow: 3px 3px 3px gray;
+        left: 0;
+    }
+    /*Styling and positioning the text for choice 2 */
+    .choiceTwo {
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        /*text-align: center;*/
+    }
+    .playTTS {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+    }
+    .reset {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        text-align: center;
+    }
+    /*Styling and positioning the button for choice 2*/
+    .choiceTwo button {
+        position: relative;
+        /*margin: 10px;*/
+        box-shadow: 3px 3px 3px gray;
+        left: 2%;
+    }
+    .thunderGoblinOne {
+        position: absolute;
+        width: 210px;
+        height: 280px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -10;
+        opacity: .4;
+    }
+    .anotherGoblin {
+        position: absolute;
+        width: 175px;
+        height: 224px;
+        top: 70%;
+        left: 25%;
+        opacity: 0.7;
+    }
+}
+
+
+/*This is the media query for styling on smaller screens*/
+
+@media(max-width: 440px) {
+    .bookImage {
+        top: 50vh;
+        left: 20%;
+        position: relative;
+        width: 30%;
+        /*height: 700px;*/
+        transform: translate(-50%, -50%);
+    }
+    #main h1 {
+        font-size: 25px;
+        top: 50%;
+        left: 5%;
+    }
+    /*Styling the actual pages for the books*/
+    .goblinQuestBook {
+        position: absolute;
+        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        width: 100vw;
+        height: 80vh;
+        /*top: 50vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 7px;
+        box-shadow: 3px 3px 3px gray;*/
+    }
+    .title {
+        position: absolute;
+        font-family: "Indie Flower", cursive;
+        /*color: #056817;*/
+        background: linear-gradient(to right, #056817, #72cc82, #056817);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 3em;
+        top: 1%;
+        left: 20%;
+    }
+    .goblinQuestBook p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /*Styling and positioning the text for choice 1 */
+    .choiceOne {
+        position: absolute;
+        top: 80%;
+        left: 2%;
+        /*text-align: center;*/
+    }
+    /*Styling and positioning the button for choice 1*/
+    .choiceOne button {
+        /*margin: 10px;*/
+        box-shadow: 3px 3px 3px lightgray;
+        left: 0;
+    }
+    /*Styling and positioning the text for choice 2 */
+    .choiceTwo {
+        position: absolute;
+        top: 80%;
+        left: 65%;
+        /*text-align: center;*/
+    }
+    .playTTS {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+    }
+    .reset {
+        position: absolute;
+        top: 85%;
+        left: 43%;
+        text-align: center;
+    }
+    /*Styling and positioning the button for choice 2*/
+    .choiceTwo button {
+        position: relative;
+        /*margin: 10px;*/
+        box-shadow: 3px 3px 3px lightgray;
+        left: 2%;
+    }
+    .thunderGoblinOne {
+        position: absolute;
+        width: 210px;
+        height: 280px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -10;
+        opacity: .4;
+    }
+    .anotherGoblin {
+        visibility: hidden;
+    }
+}

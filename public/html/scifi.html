@@ -12,8 +12,12 @@
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- Fantasy css -->
-    <link rel="stylesheet" href="./css/fantasy.css">
+    <link rel="stylesheet" href="./css/scifi.css">
+
+    <!-- These are Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
@@ -25,7 +29,7 @@
     <!-- This is for angular animate -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.js"></script>
 
-    <!-- This script tage is for routing -->
+    <!-- This script tag is for routing -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
 
     <title>Adventure Reading</title>
@@ -78,9 +82,10 @@
         <button type="button" class="btn btn-default btn-lg openMenu" onclick="openNav()">
         <span class = "glyphicon glyphicon-menu-hamburger" aria-hidden = "true"></span>MENU
       </button>
-        <!-- This is the quote on the main page for Fantasy need to find a better way to hide this -->
-        <h1 class="faded" ng-show="main.showQuote">“The moment you doubt whether you can fly, you cease forever to be able to do it.”
-          ― J.M. Barrie, Peter Pan</h1>
+
+        <!-- This is the quote on the main page for SciFi need to find a better way to hide this -->
+        <h1 class="quoteOfTheDay" ng-show="main.showQuote">“DO I DARE / DISTURB THE UNIVERSE"</h1>
+        <h1 class="byLine" ng-show="main.showQuote">—T. S. Eliot, “The Love Song of J. Alfred Prufrock”</h1>
 
         <ng-view>
 
@@ -94,7 +99,7 @@
     <!-- This is the TTS JS tag -->
     <script src="http://code.responsivevoice.org/responsivevoice.js"></script>
     <script type="text/javascript" src="./javascript/myModule.js"></script>
-    <script type="text/javascript" src="./javascript/front-end-controllers/myControllers.fantasy.js"></script>
+    <script type="text/javascript" src="./javascript/front-end-controllers/myControllers.scifi.js"></script>
     <script type="text/javascript" src="./javascript/midterm.js"></script>
 </body>
 

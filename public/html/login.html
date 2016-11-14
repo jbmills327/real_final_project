@@ -19,15 +19,19 @@
 <body ng-controller="controller.login as login">
 
     <div class="authBox">
-
+        <form ng-hide="login.hereItIs" ng-submit="login.submit()">
+            <h3>EMAIL: </h3><input type="text" placeholder="email" ng-model="login.email" class="form-control">
+            <h3>PASSWORD: </h3><input type="password" placeholder="Password" ng-model="login.password" class="form-control">
+            <button class="loginButton btn btn-success btn-lrg" type="submit">Login</button>
+            <button class="registerButton btn btn-primary" ng-click="login.showTheStuff()">Register</button>
+        </form>
     </div>
-    <form ng-submit="login.submit()">
-        <h3>EMAIL: </h3><input type="text" placeholder="email" ng-model="login.email" class="form-control">
-        <h3>PASSWORD: </h3><input type="password" placeholder="Password" ng-model="login.password" class="form-control">
-        <button class="btn btn-success btn-lrg" type="submit">Login</button>
-    </form>
 
-    <!-- <div>
+
+
+
+    <div ng-show="login.hereItIs">
+
         <form ng-submit="login.createUser()">
             <input class="form-control" type="text" placeholder="User Name" ng-model="login.newUser.userName">
             <input class="form-control" type="text" placeholder="Email" ng-model="login.newUser.email">
@@ -36,7 +40,7 @@
             <button class="form-control" type="submit" name="button">Submit</button>
         </form>
 
-    </div> -->
+    </div>
 
 
     <script type="text/javascript" src="/module.login.js"></script>

@@ -26,5 +26,20 @@ module.exports = (app) => {
             root: "./public/html"
         });
     });
+    app.get("/horror", (req, res) => {
+        res.sendFile("horror.html", {
+            root: "./public/html"
+        });
+    });
+    app.get("/scifi", (req, res) => {
+        res.sendFile("scifi.html", {
+            root: "./public/html"
+        });
+    });
+    app.get("/love", (req, res) => {
+        res.sendFile("love.html", {
+            root: "./public/html"
+        });
+    });
 
 }
