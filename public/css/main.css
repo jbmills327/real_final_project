@@ -219,9 +219,9 @@ footer a {
     position: absolute;
     top: 30%;
     left: 7%;
-    background: linear-gradient(to right, #c40522, #a5727a, #c40522);
+    /*background: linear-gradient(to right, #c40522, #a5727a, #c40522);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     transition: glideIn 300ms ease-in 1s;
 }
 

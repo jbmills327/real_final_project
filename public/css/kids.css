@@ -10,37 +10,37 @@ header {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(./resources/romanticWalk.jpg);
+    background-image: url(./resources/imaginationOne.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
-    color: #5d0270;
-    text-shadow: 3px 3px 1px #d3b6ef;
+    color: #00edff;
+    text-shadow: 3px 3px 1px #0061ff, 5px 5px 2px #00edff;
 }
 
 #main .quoteOfTheDay {
     position: absolute;
-    top: 40%;
-    left: 50%;
+    top: 30%;
+    left: 40%;
     transform: translate(-50%, -50%);
     /*background: linear-gradient(to right, #4e0493, #d3b6ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
-    font-family: "Lobster", cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     font-size: 3em;
 }
 
 #main .byLine {
     position: absolute;
-    top: 65%;
-    left: 60%;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
     /*background: linear-gradient(to right, #5d0270 60%, #f0d9f4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
-    font-family: "Lobster", cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     font-size: 3em;
 }
 
