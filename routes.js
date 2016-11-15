@@ -6,9 +6,12 @@ var app = express();
 
 module.exports = (app) => {
 
-    app.post("/login", Auth.login);
-    app.get("/logout", Auth.logout);
-    app.post("/register", Auth.register);
+    // set the home/root route and send it off to the appropriate handler
+    app.get('/', (req, res) => {
+        res.sendFile("login.html", {
+            root: './public/html'
+        });
+    });
 
     app.get('/', Auth.session);
 
@@ -16,13 +19,12 @@ module.exports = (app) => {
     // anythin below line is protected
     app.all('/api*', Auth.session);
 
+    app.post("/login", Auth.login);
+    app.get("/logout", Auth.logout);
+    app.post("/register", Auth.register);
 
-    // set the home/root route and send it off to the appropriate handler
-    app.get('/', (req, res) => {
-        res.sendFile("login.html", {
-            root: './public/html'
-        });
-    });
+
+
     // Backend routing for index.html
     app.get("/index", (req, res) => {
         res.sendFile("index.html", {

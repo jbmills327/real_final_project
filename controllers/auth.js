@@ -70,7 +70,7 @@ module.exports = ({
             if (req.session.userId) {
                 next();
             } else {
-                res.redirect("/login.html");
+                res.redirect("/html/login.html");
             }
 
         }

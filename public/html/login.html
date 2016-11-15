@@ -31,19 +31,23 @@
 
 
     <div ng-show="login.hereItIs">
-
         <form ng-submit="login.createUser()">
+            <h5>UserName</h5>
             <input class="form-control" type="text" placeholder="User Name" ng-model="login.newUser.userName">
+            <h5>Email</h5>
             <input class="form-control" type="text" placeholder="Email" ng-model="login.newUser.email">
+            <h5>Name</h5>
             <input class="form-control" type="text" placeholder="Name" ng-model="login.newUser.name">
+            <h5>Password</h5>
             <input class="form-control" type="password" placeholder="Password" ng-model="login.newUser.password">
-            <button class="form-control" type="submit" name="button">Submit</button>
-        </form>
+            <button style="position: absolute; top:105%; left: 90%" class="form-control btn btn-success " type="submit " name="button ">Submit</button>
+            <a href="/"><button style = "position: absolute; top: 105%; left: -80%"class = "form-control btn btn-danger"type="button" name="button">Login</button></a>
 
+        </form>
     </div>
 
 
-    <script type="text/javascript" src="/module.login.js"></script>
+    <script type="text/javascript " src="/module.login.js "></script>
 </body>
 
 </html>
