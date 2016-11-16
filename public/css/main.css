@@ -228,8 +228,22 @@ footer a {
 
 /*setting size for carousel photos*/
 
+.item {
+    height: 462px;
+}
+
+.item img {
+    height: 462px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    max-width: none;
+}
+
 .carouselPhotos {
     width: 100vw;
+    /*height: 100%;*/
 }
 
 

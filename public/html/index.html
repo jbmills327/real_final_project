@@ -28,7 +28,7 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form ng-submit="main.addAUser()">
+                <form ng-submit="main.addAdventurer()">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">New User</h4>
@@ -36,7 +36,10 @@
                     <div class="modal-body">
                         <input class="form-control" type="text" ng-model="main.name" placeholder="Name">
                         <input class="form-control" type="text" ng-model="main.age" placeholder="Age">
-                        <input class="form-control" type="text" ng-model="main.adventurer" placeholder="adventurer">
+                        <!-- <input class="form-control" type="text" ng-model="main.adventurer" placeholder="adventurer"> -->
+                        <select ng-model="main.selectRace" ng-options="x for x in main.races">
+
+                        </select>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -52,11 +55,12 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Home</a>
-        <a data-toggle="modal" data-target="#myModal">Sign In</a>
+        <a data-toggle="modal" data-target="#myModal">Add Adventurer</a>
         <a href="#jumpToAboutUs">About Us</a>
         <a href="#genreCarousel">Genre</a>
         <a href="#howToHelpJump">How to Help</a>
         <a href="#contactUsJump">Contact</a>
+        <a href="/logout">Logout</a>
     </div>
 
 
@@ -144,7 +148,9 @@
 
             <!-- Slide for Fantasy -->
             <div class="item">
-                <img class="carouselPhotos" src="./css/resources/giants.jpg" alt="Fantasy" />
+                <div class="sliderSize">
+                    <img class="carouselPhotos" src="./css/resources/giants.jpg" alt="Fantasy" />
+                </div>
                 <div class="carousel-caption">
                     <a href="/fantasy">
                         <button type="submit" class="btn btn-danger">This is Fantasy</button>
@@ -155,7 +161,9 @@
 
             <!-- Slide for Horror -->
             <div class="item">
-                <img class="carouselPhotos" src="./css/resources/scary.jpg" alt="Horror" />
+                <div class="sliderSize">
+                    <img class="carouselPhotos" src="./css/resources/scary.jpg" alt="Horror" />
+                </div>
                 <div class="carousel-caption">
                     <a href="/horror">
                         <button type="button" class="btn btn-danger">This is Horror</button>
@@ -166,7 +174,9 @@
 
             <!-- Slide for Love Stories -->
             <div class="item">
-                <img class="carouselPhotos" src="./css/resources/romanticWalk.jpg" alt="Love Stories" />
+                <div class="sliderSize">
+                    <img class="carouselPhotos" src="./css/resources/romanticWalk.jpg" alt="Love Stories" />
+                </div>
                 <div class="carousel-caption">
                     <a href="/love">
                         <button type="button" class="btn btn-danger">This is Love</button>
@@ -177,7 +187,9 @@
 
             <!-- Slide for kids -->
             <div class="item">
-                <img class="carouselPhotos" src="./css/resources/kidsOne.jpg" alt="Kids" />
+                <div class="sliderSize">
+                    <img class="carouselPhotos" src="./css/resources/kidsOne.jpg" alt="Kids" />
+                </div>
                 <div class="carousel-caption">
                     <a href="/kids">
                         <button type="button" class="btn btn-danger">Written by Kids</button>

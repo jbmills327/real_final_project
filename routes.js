@@ -12,6 +12,8 @@ module.exports = (app) => {
             root: './public/html'
         });
     });
+    app.post("/login", Auth.login);
+    app.get("/logout", Auth.logout);
 
     app.get('/', Auth.session);
 
@@ -19,8 +21,8 @@ module.exports = (app) => {
     // anythin below line is protected
     app.all('/api*', Auth.session);
 
-    app.post("/login", Auth.login);
-    app.get("/logout", Auth.logout);
+    // app.post("/login", Auth.login);
+    // app.get("/logout", Auth.logout);
     app.post("/register", Auth.register);
 
 

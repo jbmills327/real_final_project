@@ -45,7 +45,7 @@ module.exports = ({
         logout: (req, res) => {
 
             req.session.reset();
-            res.redirect("/login.html")
+            res.redirect("/html/login.html")
 
         },
 

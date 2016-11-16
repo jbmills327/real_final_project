@@ -34,6 +34,7 @@ function loginController($http) {
             location.href = "/index";
         }, function(err) {
             console.error(err);
+            alert("Login or Password are incorrect, please try again");
         });
     }
 

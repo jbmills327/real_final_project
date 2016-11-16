@@ -45,10 +45,12 @@ app.use(bodyParser.json());
 // });
 
 // add the static route handler for the public directory
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 // call the exported routes function with the express app
 routes(app);
+// add the static route handler for the public directory
+app.use(express.static('public'));
 
 // no route found...
 // app.use('*', ...)

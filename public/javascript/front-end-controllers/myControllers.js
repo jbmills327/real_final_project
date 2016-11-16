@@ -7,6 +7,7 @@ angular.module("myApp")
 
 // injecting the router
 myRouter.$inject = ["$routeProvider"];
+mainController.$inject = ["$http"];
 
 
 // This is the function that controls where we hop during the routing process
@@ -28,227 +29,39 @@ function myRouter($routeProvider) {
 }
 
 
+
+
 // Main Controller
-function mainController() {
+function mainController($http) {
     var main = this;
+    main.races = ["Elf", "Dwarf", "Human", "Garnog"];
 
     // This is the array that will hold the new users, currently is set to save data in and pull data from local storage
-    main.newUserList = JSON.parse(window.localStorage.getItem("users")) || [];
+    // main.newUserList = JSON.parse(window.localStorage.getItem("users")) || [];
     // Empty new user object
-    main.newUsers = {}
+    main.newAdventurerList = [];
+    main.newAdventurer = {}
         // Creating the User class
-    var User = function(name, age, adventurer) {
+    var Adventurer = function(name, age, adventurer, selectRace) {
             this.name = main.name;
             this.age = main.age;
-            this.adventurer = main.adventurer;
+            // this.adventurer = main.adventurer;
+            this.selectRace = main.selectRace;
         }
         // This is the function that creates new Users
-    main.addAUser = function() {
-        main.newUsers = new User(main.name, main.age, main.adventurer);
-        main.newUserList.push(main.newUsers);
+    main.addAdventurer = function() {
+        main.newAdventurer = new Adventurer(main.name, main.age, main.adventurer);
+        console.log(main.newAdventurer);
+        // main.newUserList.push(main.newAdventurer);
         $("#myModal").modal("hide");
-        main.newUsers = {};
-        window.localStorage.setItem("users", JSON.stringify(main.newUserList));
-        console.log(main.newUserList);
+        main.newAdventurer = {};
         main.greeting = "Hello " + main.name + ", are you ready for an adventure?";
+
 
     }
 
 
-    // These are the paths to assign text based on the page and choices made.
-    main.paths = [{
-        uniqueId: 0,
-        description: "Koen is the strongest boy in the whole world.  His mommy and daddy love him very very much.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: true
-    }, {
-        uniqueId: 1,
-        description: "While it is universally accepted that little Rob is Big Rob and big Rob is little Rob, there is still much debate as to which one is Handsome Rob.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 2,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 3,
-        description: "In contrast there is no debate as to who is handsome Steve.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 4,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 5,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 6,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 7,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 8,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 9,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 10,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 11,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 12,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 13,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 14,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 15,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 16,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 17,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 18,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 19,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 20,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 21,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 22,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 23,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 24,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 25,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 26,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 27,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 28,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 29,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 30,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, {
-        uniqueId: 31,
-        description: "YOU WON!!",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
-        active: false
-    }, ];
+
 
 
     // This is the function that pipes the text in the description above to the TTS function.
@@ -257,16 +70,7 @@ function mainController() {
     }
 
 
-    // This is the function that was created to move from one page to another when a choice is made.
-    main.choose = function(uniqueId, choice) {
-        if (uniqueId < 15) {
-            main.paths[uniqueId].active = false;
-            main.paths[uniqueId * 2 + choice].active = true;
-        } else {
-            main.paths[uniqueId].active = false;
-            main.paths[31].active = true;
-        }
-    }
+
 
     // This is the function for the custom filet that was created.
     main.isActive = function(path) {
