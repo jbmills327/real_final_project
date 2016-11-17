@@ -19,6 +19,10 @@ UserSchema = new mongoose.Schema({
         type: Number,
         default: () => Date.now()
     }
+    // adventurers: [{
+    //     type: mongoose.Schema.ObjectId,
+    //     ref: 'Adventurer'
+    // }]
 
 });
 

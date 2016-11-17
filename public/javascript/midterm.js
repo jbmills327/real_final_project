@@ -14,6 +14,9 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
+
+//This is all for the parralax effect 
+
 // This is the fix for the scrolling issue
 var containerHeight = $("#main").height();
 

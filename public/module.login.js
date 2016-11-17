@@ -16,7 +16,11 @@ loginController.$inject = ["$http"];
 // }
 
 
+
+
 function loginController($http) {
+
+
     var login = this;
     login.greeting = "This is working";
     login.newUser = {};
@@ -44,7 +48,7 @@ function loginController($http) {
             .then(function(res) {
                 console.log(res.data);
                 console.log("Bullshit");
-                location.href = "/index";
+                location.href = "/html/login.html";
             })
             .catch(function(err) {
                 console.log("This is an error");

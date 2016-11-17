@@ -1,10 +1,13 @@
 // Master routing file which defines all the routes we will have on the back end
 var Auth = require("./controllers/auth"),
-    express = require("express");
+    express = require("express"),
+    Adv = require("./controllers/adventurers");
 
 var app = express();
 
 module.exports = (app) => {
+
+
 
     // set the home/root route and send it off to the appropriate handler
     app.get('/', (req, res) => {
@@ -19,11 +22,18 @@ module.exports = (app) => {
 
 
     // anythin below line is protected
-    app.all('/api*', Auth.session);
+    // app.all('/api*', Auth.session);
 
     // app.post("/login", Auth.login);
     // app.get("/logout", Auth.logout);
     app.post("/register", Auth.register);
+    app.post('/api/advs', Adv.create);
+    app.get('/api/advs', Adv.get);
+
+    app.get("/api/getUserId", (req, res) => {
+        console.log("This is the session ID: ", req.session.userId);
+        res.send(req.session.userId);
+    })
 
 
 

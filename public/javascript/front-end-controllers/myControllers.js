@@ -7,7 +7,7 @@ angular.module("myApp")
 
 // injecting the router
 myRouter.$inject = ["$routeProvider"];
-mainController.$inject = ["$http"];
+mainController.$inject = ["$http", "adventFactory"];
 
 
 // This is the function that controls where we hop during the routing process
@@ -32,7 +32,7 @@ function myRouter($routeProvider) {
 
 
 // Main Controller
-function mainController($http) {
+function mainController($http, adventFactory) {
     var main = this;
     main.races = ["Elf", "Dwarf", "Human", "Garnog"];
 
@@ -40,24 +40,60 @@ function mainController($http) {
     // main.newUserList = JSON.parse(window.localStorage.getItem("users")) || [];
     // Empty new user object
     main.newAdventurerList = [];
-    main.newAdventurer = {}
-        // Creating the User class
-    var Adventurer = function(name, age, adventurer, selectRace) {
-            this.name = main.name;
-            this.age = main.age;
-            // this.adventurer = main.adventurer;
-            this.selectRace = main.selectRace;
-        }
-        // This is the function that creates new Users
+    var idToGet;
+    main.newAdventurer = {};
+
+    // This was before I had the DB setup
+
+    // Creating the User class
+    // var Adventurer = function(name, age, adventurer, selectRace) {
+    //         this.name = main.name;
+    //         this.age = main.age;
+    // this.adventurer = main.adventurer;
+    //     this.selectRace = main.selectRace;
+    // }
+    // This is the function that creates new Users
+
+    $http.get('/api/getUserId')
+        .then(function(res) {
+            idToGet = res.data;
+            console.log("THis should be the ID: ", idToGet);
+            main.newAdventurer = {
+                createdBy: idToGet
+            };
+            return idToGet;
+        }, function(err) {
+            if (err) {
+                console.log(err)
+            }
+        });
+
     main.addAdventurer = function() {
-        main.newAdventurer = new Adventurer(main.name, main.age, main.adventurer);
-        console.log(main.newAdventurer);
+        // $http.get('/api/getUserId')
+        //     .then(function(res) {
+        //         idToGet = res.data;
+        //         console.log("THis should be the ID: ", idToGet);
+        //         return idToGet;
+        //     }, function(err) {
+        //         if (err) {
+        //             console.log(err)
+        //         }
+        //     });
+        adventFactory.createAdvents(main.newAdventurer)
+            .then(function(returnData) {
+                main.newAdventurer = {
+                    createdBy: idToGet
+                };
+            })
+
+        // This was also before I had the DB setup
+
+        // main.newAdventurer = new Adventurer(main.name, main.age, main.adventurer);
+        // console.log(main.newAdventurer);
         // main.newUserList.push(main.newAdventurer);
-        $("#myModal").modal("hide");
-        main.newAdventurer = {};
-        main.greeting = "Hello " + main.name + ", are you ready for an adventure?";
-
-
+        // $("#myModal").modal("hide");
+        // main.newAdventurer = {};
+        // main.greeting = "Hello " + main.name + ", are you ready for an adventure?";
     }
 
 
