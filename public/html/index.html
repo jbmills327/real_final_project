@@ -51,15 +51,57 @@
         </div>
     </div>
 
+    <!-- Choose adventurer Modal -->
+    <div class="modal fade" id="adventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form ng-submit="main.addAdventurer()">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">New User</h4>
+                    </div>
+                    <div class="modal-body">
+                        <!-- <input class="form-control" type="text" ng-model="main.newAdventurer.name" placeholder="Name">
+                        <input class="form-control" type="text" ng-model="main.newAdventurer.age" placeholder="Age"> -->
+                        <!-- <input class="form-control" type="text" ng-model="main.adventurer" placeholder="adventurer"> -->
+                        <select class="form-control" ng-model="main.newAdventurer.race" ng-options="x.name for x in main.adventList">
+
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save changes</button>
+                </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- This is the slide menu -->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Home</a>
         <a data-toggle="modal" data-target="#myModal">Add Adventurer</a>
+        <a data-toggle="modal" data-target="#adventModal">Choose Adventurer</a>
         <a href="#jumpToAboutUs">About Us</a>
-        <a href="#genreCarousel">Genre</a>
+        <a href="javascript:void(0)" onclick="openNestedNav(); closeNav()">Genres</a>
+        <!-- <a href="#genreCarousel">Genre</a> -->
         <a href="#howToHelpJump">How to Help</a>
         <a href="#contactUsJump">Contact</a>
+        <a href="/logout">Logout</a>
+
+    </div>
+
+    <!-- This is the nested slide menu -->
+    <div id="myNestedSidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNestedNav()">&times;</a>
+        <a href="/fantasy">Fantasy</a>
+        <a href="/scifi">SciFi</a>
+        <a href="/love">Love</a>
+        <a href="/horror">Spooky</a>
+        <a href="/kids">By Kids for Kids</a>
+        <a href="javascript:void(0)" onclick="closeNestedNav(); openNav()">Back</a>
         <a href="/logout">Logout</a>
     </div>
 

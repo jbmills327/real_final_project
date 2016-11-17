@@ -42,6 +42,7 @@ function mainController($http, adventFactory) {
     main.newAdventurerList = [];
     var idToGet;
     main.newAdventurer = {};
+    main.adventList = [];
 
     // This was before I had the DB setup
 
@@ -61,6 +62,7 @@ function mainController($http, adventFactory) {
             main.newAdventurer = {
                 createdBy: idToGet
             };
+            main.getAdventurer(idToGet);
             return idToGet;
         }, function(err) {
             if (err) {
@@ -68,17 +70,8 @@ function mainController($http, adventFactory) {
             }
         });
 
+
     main.addAdventurer = function() {
-        // $http.get('/api/getUserId')
-        //     .then(function(res) {
-        //         idToGet = res.data;
-        //         console.log("THis should be the ID: ", idToGet);
-        //         return idToGet;
-        //     }, function(err) {
-        //         if (err) {
-        //             console.log(err)
-        //         }
-        //     });
         adventFactory.createAdvents(main.newAdventurer)
             .then(function(returnData) {
                 main.newAdventurer = {
@@ -95,6 +88,24 @@ function mainController($http, adventFactory) {
         // main.newAdventurer = {};
         // main.greeting = "Hello " + main.name + ", are you ready for an adventure?";
     }
+
+
+    main.getAdventurer = function() {
+        var userId = idToGet
+        adventFactory.getAdvents(userId)
+            .then(function(returnData) {
+                console.log("This is the returndata: ", returnData.data);
+                main.adventList = returnData.data;
+            }).catch(function(err) {
+
+                console.log("This is the error: ", err);
+            });
+
+    }
+
+
+
+
 
 
 
@@ -144,5 +155,4 @@ function mainController($http, adventFactory) {
     main.showTheQuote = function() {
         main.showQuote = !main.showQuote;
     }
-
 }

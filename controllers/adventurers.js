@@ -15,9 +15,11 @@ module.exports = {
     },
     get: (req, res) => {
 
-        ADV.find({}, (err, docs) => {
+        ADV.find({
+            createdBy: req.params.id
+        }, (err, docs) => {
             if (err) {
-                return res.send(err);
+                res.send(err);
             }
             res.json(docs);
         })

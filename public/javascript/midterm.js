@@ -6,6 +6,12 @@ function openNav() {
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
+function openNestedNav() {
+    document.getElementById("myNestedSidenav").style.width = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+}
+
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 
 function closeNav() {
@@ -14,8 +20,13 @@ function closeNav() {
     document.body.style.backgroundColor = "white";
 }
 
+function closeNestedNav() {
+    document.getElementById("myNestedSidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
 
-//This is all for the parralax effect 
+
+//This is all for the parralax effect
 
 // This is the fix for the scrolling issue
 var containerHeight = $("#main").height();

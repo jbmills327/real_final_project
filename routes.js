@@ -28,7 +28,7 @@ module.exports = (app) => {
     // app.get("/logout", Auth.logout);
     app.post("/register", Auth.register);
     app.post('/api/advs', Adv.create);
-    app.get('/api/advs', Adv.get);
+    app.get('/api/advs/:id', Adv.get);
 
     app.get("/api/getUserId", (req, res) => {
         console.log("This is the session ID: ", req.session.userId);
