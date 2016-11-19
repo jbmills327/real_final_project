@@ -19,8 +19,8 @@ header {
 }
 
 #main .quoteOfTheDay {
-    color: #5d0270;
-    text-shadow: 3px 3px 1px #d3b6ef;
+    color: #c21331;
+    text-shadow: 1px 1px 2px #3dd0b6, 3px 3px 1px black;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -28,31 +28,33 @@ header {
     /*background: linear-gradient(to right, #4e0493, #d3b6ef);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
-    font-family: "Lobster", cursive;
+    /*font-family: "Lobster", cursive;*/
+    font-family: 'Acme', sans-serif;
     font-size: 3em;
 }
 
 #main .byLine {
     position: absolute;
-    color: #5d0270;
-    text-shadow: 3px 3px 1px #d3b6ef;
-    top: 65%;
+    color: #c21331;
+    text-shadow: 1px 1px 2px #3dd0b6, 3px 3px 1px black;
+    top: 60%;
     left: 60%;
     transform: translate(-50%, -50%);
     /*background: linear-gradient(to right, #5d0270 60%, #f0d9f4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
-    font-family: "Lobster", cursive;
-    font-size: 3em;
+    font-family: "Acme", sans-serif;
+    font-size: 2em;
 }
 
 .title {
     position: absolute;
     /*font-family: 'Cormorant Garamond', serif;*/
     font-family: 'Lobster Two', cursive;
-    color: #4b028e;
-    text-shadow: 3px 3px 1px #d3b6ef;
-    /*background: linear-gradient(to right, #056817, #72cc82, #056817);
+    /*color: #4b028e;*/
+    color: white;
+    text-shadow: 3px 3px 1px black;
+    /*background: linear-gradient(to right, #2cc6e5, #4b028e, #2cc6e5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
     font-size: 5em;
@@ -84,12 +86,13 @@ header {
 
 .goblinQuestBook {
     position: absolute;
-    /*background-image: url("./resources/paper.jpg");*/
+    background-image: url("./resources/watercolorBack.jpg");
     background-size: cover;
-    color: #dd0d52;
-    text-shadow: 1px 1px 2px #4b028e;
-    font-family: 'Cormorant Garamond', serif;
-    background: radial-gradient(#04f2e6, #18cec5, #028e87);
+    background-position: bottom;
+    color: white;
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black;
+    font-family: 'Oswald', sans-serif;
+    /*background: radial-gradient(#04f2e6, #18cec5, #028e87);*/
     width: 75%;
     height: 75%;
     top: 50vh;
@@ -133,7 +136,8 @@ header {
 
 .choiceOneButton {
     margin: 10px;
-    background-color: #4b028e;
+    /*background-color: #4b028e;*/
+    background-color: #2cc6e5;
     color: white;
     box-shadow: 2px 2px 2px white;
 }
@@ -166,11 +170,12 @@ header {
 
 .thunderGoblinOne {
     position: absolute;
-    width: 168px;
-    height: 224px;
+    width: 185px;
+    height: 215px;
     top: 20%;
-    left: 80%;
-    /*opacity: 0.7;*/
+    left: 75%;
+    transform: rotate(30deg);
+    opacity: 0.7;
 }
 
 .anotherGoblin {

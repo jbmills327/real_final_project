@@ -44,7 +44,8 @@ module.exports = ({
 
         logout: (req, res) => {
 
-            req.session.reset();
+            // req.session.reset();
+            req.session.destroy();
             res.redirect("/html/login.html")
 
         },
@@ -57,7 +58,7 @@ module.exports = ({
             // Actually saves in database
             newUser.save((err, doc) => {
                 if (err) {
-                    return res.send(err);
+                    res.send(err);
                 }
                 console.log(doc);
                 res.send(doc);

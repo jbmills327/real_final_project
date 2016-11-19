@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/kids.css">
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
     <!-- jQuery -->
@@ -41,10 +42,10 @@
         <a href="#" ng-click="main.showTheQuote()">Main Page</a>
         <a href="/index" type="submit">Home</a>
         <!-- <a href="index.html">Home</a> -->
-        <a href="#level1" ng-click="main.hideTheQuote()"=>Level 1</a>
-        <a href="#level2" ng-click="main.hideTheQuote()">Level 2</a>
-        <a href="#level3" ng-click="main.hideTheQuote()">Level 3</a>
-        <a href="#level4" ng-click="main.hideTheQuote()">Level 4</a>
+        <a href="#level1" onclick="closeNav()" ng-click="main.hideTheQuote()"=>Level 1</a>
+        <a href="#level2" onclick="closeNav()" ng-click="main.hideTheQuote()">Level 2</a>
+        <a href="#level3" onclick="closeNav()" ng-click="main.hideTheQuote()">Level 3</a>
+        <a href="#level4" onclick="closeNav()" ng-click="main.hideTheQuote()">Level 4</a>
         <a href="javascript:void(0)" onclick="openNestedNav(); closeNav()">Genres</a>
 
     </div>

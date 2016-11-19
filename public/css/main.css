@@ -97,6 +97,18 @@ header {
     border-bottom: 5px solid black;
 }
 
+.carouselButton {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 7px;
+    border: 1px solid white;
+}
+
+.carouselButton:hover {
+    color: red;
+    border: 1px solid red;
+}
+
 
 /*styling the h1 element in the quote div*/
 
