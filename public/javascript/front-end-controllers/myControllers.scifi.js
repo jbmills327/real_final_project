@@ -58,187 +58,187 @@ function mainController() {
     // These are the paths to assign text based on the page and choices made.
     main.paths = [{
         uniqueId: 0,
-        description: "Koen is the strongest boy in the whole world.  His mommy and daddy love him very very much.",
+        description: "This is page zero of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: true
     }, {
         uniqueId: 1,
-        description: "While it is universally accepted that little Rob is Big Rob and big Rob is little Rob, there is still much debate as to which one is Handsome Rob.",
+        description: "This is page one of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 2,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page two of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 3,
-        description: "In contrast there is no debate as to who is handsome Steve.",
+        description: "This is page three of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 4,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page four of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 5,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page five of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 6,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page six of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 7,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page seven of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 8,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page eight of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 9,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page nine of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 10,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page ten of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 11,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page eleven of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 12,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twelve of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 13,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page thirteen of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 14,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page fourteen of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 15,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page fifteen of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 16,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page sixteen of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 17,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page seventeen of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 18,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page eighteen of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 19,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page nineteen of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 20,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 21,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-one of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 22,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-two of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 23,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-three of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 24,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-four of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 25,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-five of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 26,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-six of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 27,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-seven of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 28,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-eight of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 29,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page twenty-nine of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 30,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is page thirty of level one in the Science Fiction Section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
@@ -301,8 +301,12 @@ function mainController() {
         main.showGoblinQuest = !main.showGoblinQuest;
         main.hideLevelOneThumbs = !main.hideLevelOneThumbs;
     };
+
+    main.hideTheQuote = function() {
+        main.showQuote = false;
+    }
     main.showTheQuote = function() {
-        main.showQuote = !main.showQuote;
+        main.showQuote = true;
     }
 
 }

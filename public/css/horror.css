@@ -18,38 +18,56 @@ header {
     overflow: hidden;
 }
 
+
+/*Style the quote that is found on the main page*/
+
 #main .quoteOfTheDay {
     position: absolute;
-    top: 60%;
-    left: 30%;
+    top: 40%;
+    left: 45%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(to right, #bc0505, #e09d9d, #bc0505);
+    color: #cc0000;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px black, 4px 4px 3px white, -4px -4px 3px white;
+    font-size: 4em;
+    /*background: linear-gradient(to right, #bc0505, #e09d9d, #bc0505);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Fredericka the Great", cursive;
+    -webkit-text-fill-color: transparent;*/
+    font-family: 'Creepster', cursive;
+    /*font-family: "Fredericka the Great", cursive;*/
 }
+
+
+/*Style the byline for the quote on the main page*/
 
 #main .byLine {
     position: absolute;
-    top: 70%;
-    left: 40%;
+    top: 55%;
+    left: 55%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(to right, #bc0505, #e09d9d, #bc0505);
+    color: #cc0000;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px black, 4px 4px 3px white, -4px -4px 3px white;
+    font-size: 3em;
+    /*background: linear-gradient(to right, #bc0505, #e09d9d, #bc0505);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Fredericka the Great", cursive;
+    -webkit-text-fill-color: transparent;*/
+    /*font-family: "Fredericka the Great", cursive;*/
+    font-family: 'Creepster', cursive;
 }
+
+
+/*This section styles the title that is found in the pages of the book*/
 
 .title {
     position: absolute;
-    font-family: "Indie Flower", cursive;
-    /*color: #056817;*/
-    background: linear-gradient(to right, #056817, #72cc82, #056817);
+    font-family: 'Eater', cursive;
+    color: #cc0000;
+    text-shadow: 2px 2px 2px black, -2px -2px 2px black, 4px 4px 3px white, -4px -4px 3px white;
+    /*background: linear-gradient(to right, #056817, #72cc82, #056817);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     font-size: 5em;
     top: 1%;
-    left: 20%;
+    left: 10%;
 }
 
 
@@ -76,16 +94,18 @@ header {
 
 .goblinQuestBook {
     position: absolute;
-    background-image: url("./resources/paper.jpg");
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    /*background-image: url("./resources/paper.jpg");*/
     background-size: cover;
-    /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
+    background: radial-gradient(#145604, #2ece06, #145604);
+    box-shadow: 3px 3px 3px white, -3px -3px 3px white, 5px 5px 3px black, -5px -5px 3px black;
     width: 75%;
     height: 75%;
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
-    box-shadow: 3px 3px 3px gray;
 }
 
 
@@ -120,9 +140,16 @@ header {
 
 /*Styling and positioning the button for choice 1*/
 
-.choiceOne button {
+
+/*.choiceOne button {
     margin: 10px;
     box-shadow: 3px 3px 3px gray;
+}*/
+
+.choiceOneButton {
+    background-color: #cc0000;
+    color: white;
+    box-shadow: 2px 2px 2px white;
 }
 
 
@@ -143,27 +170,30 @@ header {
 
 .reset {
     position: absolute;
+    background-color: black;
+    color: red;
     top: 85%;
     left: 45%;
     text-align: center;
-    box-shadow: 3px 3px 3px lightgray;
+    box-shadow: 3px 3px 3px white;
 }
 
 
 /*Styling and positioning the button for choice 2*/
 
-.choiceTwo button {
+
+/*.choiceTwo button {
     margin: 10px;
     box-shadow: 3px 3px 3px lightgray;
-}
+}*/
 
 .thunderGoblinOne {
     position: absolute;
-    width: 168px;
-    height: 224px;
-    top: 20%;
-    left: 80%;
-    opacity: 0.7;
+    width: 200px;
+    height: 350px;
+    top: 5%;
+    left: 75%;
+    /*opacity: 0.7;*/
 }
 
 .anotherGoblin {
@@ -215,8 +245,11 @@ header {
     }
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
+        color: white;
+        text-shadow: 2px 2px 2px black;
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        background: radial-gradient(#145604, #2ece06, #145604);
+        box-shadow: 3px 3px 3px white, -3px -3px 3px white, 5px 5px 3px black, -5px -5px 3px black;
         width: 100vw;
         height: 70vh;
         /*top: 50vh;
@@ -227,11 +260,9 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
-        /*color: #056817;*/
-        background: linear-gradient(to right, #056817, #72cc82, #056817);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-family: 'Eater', cursive;
+        color: #cc0000;
+        text-shadow: 2px 2px 2px black, -2px -2px 2px black, 4px 4px 3px white, -4px -4px 3px white;
         font-size: 5em;
         top: 1%;
         left: 20%;
@@ -253,10 +284,10 @@ header {
         /*text-align: center;*/
     }
     /*Styling and positioning the button for choice 1*/
-    .choiceOne button {
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px gray;
-        left: 0;
+    .choiceOneButton {
+        background-color: #cc0000;
+        color: white;
+        box-shadow: 2px 2px 2px white;
     }
     /*Styling and positioning the text for choice 2 */
     .choiceTwo {
@@ -272,16 +303,12 @@ header {
     }
     .reset {
         position: absolute;
+        background-color: black;
+        color: red;
         top: 85%;
         left: 50%;
         text-align: center;
-    }
-    /*Styling and positioning the button for choice 2*/
-    .choiceTwo button {
-        position: relative;
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px gray;
-        left: 2%;
+        box-shadow: 3px 3px 3px white;
     }
     .thunderGoblinOne {
         position: absolute;
@@ -323,7 +350,8 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        background: radial-gradient(#145604, #2ece06, #145604);
+        box-shadow: 3px 3px 3px white, -3px -3px 3px white, 5px 5px 3px black, -5px -5px 3px black;
         width: 100vw;
         height: 80vh;
         /*top: 50vh;
@@ -334,11 +362,9 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
-        /*color: #056817;*/
-        background: linear-gradient(to right, #056817, #72cc82, #056817);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-family: 'Eater', cursive;
+        color: #cc0000;
+        text-shadow: 2px 2px 2px black, -2px -2px 2px black, 4px 4px 3px white, -4px -4px 3px white;
         font-size: 3em;
         top: 1%;
         left: 20%;
@@ -360,10 +386,10 @@ header {
         /*text-align: center;*/
     }
     /*Styling and positioning the button for choice 1*/
-    .choiceOne button {
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px lightgray;
-        left: 0;
+    .choiceOneButton {
+        background-color: #cc0000;
+        color: white;
+        box-shadow: 2px 2px 2px white;
     }
     /*Styling and positioning the text for choice 2 */
     .choiceTwo {
@@ -379,16 +405,12 @@ header {
     }
     .reset {
         position: absolute;
+        background-color: black;
+        color: red;
         top: 85%;
         left: 43%;
         text-align: center;
-    }
-    /*Styling and positioning the button for choice 2*/
-    .choiceTwo button {
-        position: relative;
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px lightgray;
-        left: 2%;
+        box-shadow: 3px 3px 3px white;
     }
     .thunderGoblinOne {
         position: absolute;

@@ -23,13 +23,16 @@ header {
 
 #main .quoteOfTheDay {
     position: absolute;
-    top: 50%;
-    left: 40%;
+    top: 40%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
-    background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
+    font-size: 5em;
+    color: #c90404;
+    /*color: black;*/
+    text-shadow: 2px 2px 2px #eaff0a, 4px 4px 3px #ff8800, 6px 6px 4px white;
+    /*background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     font-family: "Ravi Prakash", cursive;
 }
 
@@ -39,25 +42,28 @@ header {
 #main .byLine {
     position: absolute;
     top: 65%;
-    left: 50%;
+    left: 70%;
     transform: translate(-50%, -50%);
-    font-size: 3em;
-    background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
+    font-size: 4em;
+    color: #c90404;
+    text-shadow: 2px 2px 2px #eaff0a, 4px 4px 3px #ff8800, 6px 6px 4px white;
+    /*background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     font-family: "Ravi Prakash", cursive;
 }
 
 .title {
     position: absolute;
-    font-family: "Indie Flower", cursive;
-    /*color: #056817;*/
-    background: linear-gradient(to right, #056817, #72cc82, #056817);
+    font-family: 'Exo 2', sans-serif;
+    color: #e53500;
+    text-shadow: 2px 2px 3px #fff600;
+    /*background: linear-gradient(to right, #056817, #72cc82, #056817);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     font-size: 5em;
     top: 1%;
-    left: 20%;
+    left: 10%;
 }
 
 
@@ -84,7 +90,10 @@ header {
 
 .goblinQuestBook {
     position: absolute;
-    background-image: url("./resources/paper.jpg");
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Exo 2', sans-serif;
+    background-image: url("./resources/beautifulSpace.jpg");
     background-size: cover;
     /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
     width: 75%;
@@ -93,7 +102,11 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 7px white, -3px -3px 7px white;
+}
+
+.choiceOneButton {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -167,11 +180,11 @@ header {
 
 .thunderGoblinOne {
     position: absolute;
-    width: 168px;
+    width: 200px;
     height: 224px;
     top: 20%;
-    left: 80%;
-    opacity: 0.7;
+    left: 75%;
+    /*opacity: 0.7;*/
 }
 
 .anotherGoblin {
@@ -224,7 +237,11 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-family: 'Exo 2', sans-serif;
+        background-image: url("./resources/beautifulSpace.jpg");
+        /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
         width: 100vw;
         height: 70vh;
         /*top: 50vh;
@@ -235,11 +252,12 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
-        /*color: #056817;*/
-        background: linear-gradient(to right, #056817, #72cc82, #056817);
+        font-family: 'Exo 2', sans-serif;
+        color: #e53500;
+        text-shadow: 2px 2px 3px #fff600;
+        /*background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
         font-size: 5em;
         top: 1%;
         left: 20%;
@@ -331,7 +349,11 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        color: white;
+        font-family: 'Exo 2', sans-serif;
+        text-shadow: 2px 2px 2px black;
+        background-image: url("./resources/beautifulSpace.jpg");
+        /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
         width: 100vw;
         height: 80vh;
         /*top: 50vh;
@@ -342,7 +364,9 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
+        font-family: 'Exo 2', sans-serif;
+        color: #e53500;
+        text-shadow: 2px 2px 3px #fff600;
         /*color: #056817;*/
         background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;

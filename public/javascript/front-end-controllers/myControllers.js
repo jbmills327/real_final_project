@@ -34,7 +34,8 @@ function myRouter($routeProvider) {
 // Main Controller
 function mainController($http, adventFactory) {
     var main = this;
-    main.races = ["Elf", "Dwarf", "Human", "Garnog"];
+    main.races = ["Elf", "Dwarf", "Human", "Mermaid", "Fairy", "Halfling"];
+    main.classes = ["Warrior", "Cleric", "Wizard", "Thief", "Princess", "Prince", "Druid"]
 
     // This is the array that will hold the new users, currently is set to save data in and pull data from local storage
     // main.newUserList = JSON.parse(window.localStorage.getItem("users")) || [];
@@ -43,6 +44,7 @@ function mainController($http, adventFactory) {
     var idToGet;
     main.newAdventurer = {};
     main.adventList = [];
+    main.chooseTheAdent = [];
 
     // This was before I had the DB setup
 
@@ -78,6 +80,8 @@ function mainController($http, adventFactory) {
                     createdBy: idToGet
                 };
             })
+        main.getAdventurer();
+        $('#myModal').modal('hide');
 
         // This was also before I had the DB setup
 
@@ -86,7 +90,7 @@ function mainController($http, adventFactory) {
         // main.newUserList.push(main.newAdventurer);
         // $("#myModal").modal("hide");
         // main.newAdventurer = {};
-        // main.greeting = "Hello " + main.name + ", are you ready for an adventure?";
+        // main.greeting = "Hello " + main.choose + ", are you ready for an adventure?";
     }
 
 
@@ -97,11 +101,16 @@ function mainController($http, adventFactory) {
                 console.log("This is the returndata: ", returnData.data);
                 main.adventList = returnData.data;
             }).catch(function(err) {
-
                 console.log("This is the error: ", err);
             });
 
     }
+
+    main.pushAdventurer = function() {
+        // main.chooseTheAdent.push(main.choose);
+        main.greeting = "Hello " + main.choose.name + ", are you ready for an adventure?";
+        $('#adventModal').modal('hide');
+    };
 
 
 
@@ -114,7 +123,7 @@ function mainController($http, adventFactory) {
     // This is the function that pipes the text in the description above to the TTS function.
     main.speakTheText = function(description) {
         responsiveVoice.speak(description);
-    }
+    };
 
 
 

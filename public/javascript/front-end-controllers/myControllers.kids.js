@@ -58,187 +58,187 @@ function mainController() {
     // These are the paths to assign text based on the page and choices made.
     main.paths = [{
         uniqueId: 0,
-        description: "Koen is the strongest boy in the whole world.  His mommy and daddy love him very very much.",
+        description: "This is the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: true
     }, {
         uniqueId: 1,
-        description: "While it is universally accepted that little Rob is Big Rob and big Rob is little Rob, there is still much debate as to which one is Handsome Rob.",
+        description: "This is page two of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 2,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page three of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 3,
-        description: "In contrast there is no debate as to who is handsome Steve.",
+        description: "This is the page three of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 4,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page four of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 5,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page five of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 6,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page six of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 7,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page seven of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 8,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page eight of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 9,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page nine of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 10,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page ten of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 11,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page eleven of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 12,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twelve of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 13,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page thirteen of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 14,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page fourteen of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 15,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page fifteen of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 16,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page sixteen of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 17,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page seventeen of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 18,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page eighteen of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 19,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page nineteen of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 20,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 21,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-one of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 22,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-two of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 23,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-three of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 24,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-four of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 25,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-five of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 26,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-six of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 27,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-seven of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 28,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-eight of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 29,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page twenty-nine of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
     }, {
         uniqueId: 30,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
+        description: "This is the page Thirty of the first story in level 1 for the by kids for kids section.",
         choiceOne: "Choice One",
         choiceTwo: "Choice Two",
         active: false
@@ -301,8 +301,12 @@ function mainController() {
         main.showGoblinQuest = !main.showGoblinQuest;
         main.hideLevelOneThumbs = !main.hideLevelOneThumbs;
     };
+
+    main.hideTheQuote = function() {
+        main.showQuote = false;
+    }
     main.showTheQuote = function() {
-        main.showQuote = !main.showQuote;
+        main.showQuote = true;
     }
 
 }

@@ -31,15 +31,13 @@
                 <form ng-submit="main.addAdventurer()">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel">New User</h4>
+                        <h4 class="modal-title" id="myModalLabel">New Adventurer</h4>
                     </div>
                     <div class="modal-body">
                         <input class="form-control" type="text" ng-model="main.newAdventurer.name" placeholder="Name">
-                        <input class="form-control" type="text" ng-model="main.newAdventurer.age" placeholder="Age">
                         <!-- <input class="form-control" type="text" ng-model="main.adventurer" placeholder="adventurer"> -->
-                        <select ng-model="main.newAdventurer.race" ng-options="x for x in main.races">
-
-                        </select>
+                        <select class="form-control" ng-model="main.newAdventurer.race" ng-options="x for x in main.races"></select>
+                        <select class="form-control" ng-model="main.newAdventurer.class" ng-options="x for x in main.classes"></select>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -55,7 +53,7 @@
     <div class="modal fade" id="adventModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form ng-submit="main.addAdventurer()">
+                <form ng-submit="main.pushAdventurer()">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title" id="myModalLabel">New User</h4>
@@ -64,7 +62,7 @@
                         <!-- <input class="form-control" type="text" ng-model="main.newAdventurer.name" placeholder="Name">
                         <input class="form-control" type="text" ng-model="main.newAdventurer.age" placeholder="Age"> -->
                         <!-- <input class="form-control" type="text" ng-model="main.adventurer" placeholder="adventurer"> -->
-                        <select class="form-control" ng-model="main.newAdventurer.race" ng-options="x.name for x in main.adventList">
+                        <select class="form-control" ng-model="main.choose" ng-options="x.name for x in main.adventList">
 
                         </select>
                     </div>
@@ -183,7 +181,7 @@
                 <img class="carouselPhotos" src="./css/resources/Sci-Fi.jpg" alt="Science Fiction" />
                 <div class="carousel-caption">
                     <a href="/scifi">
-                        <button type="button" class="btn btn-danger">This is Science Fiction</button>
+                        <button type="button" class="btn btn-danger btn-lg">Science Fiction</button>
                     </a>
                 </div>
             </div>
@@ -195,7 +193,7 @@
                 </div>
                 <div class="carousel-caption">
                     <a href="/fantasy">
-                        <button type="submit" class="btn btn-danger">This is Fantasy</button>
+                        <button type="submit" class="btn btn-danger btn-lg">Fantasy</button>
                     </a>
                 </div>
                 <div class="carousel-caption"></div>
@@ -208,7 +206,7 @@
                 </div>
                 <div class="carousel-caption">
                     <a href="/horror">
-                        <button type="button" class="btn btn-danger">This is Horror</button>
+                        <button type="button" class="btn btn-danger btn-lg">Spooky</button>
                     </a>
                 </div>
                 <div class="carousel-caption"></div>
@@ -221,7 +219,7 @@
                 </div>
                 <div class="carousel-caption">
                     <a href="/love">
-                        <button type="button" class="btn btn-danger">This is Love</button>
+                        <button type="button" class="btn btn-danger btn-lg">Love</button>
                     </a>
                 </div>
                 <div class="carousel-caption"></div>
@@ -234,7 +232,7 @@
                 </div>
                 <div class="carousel-caption">
                     <a href="/kids">
-                        <button type="button" class="btn btn-danger">Written by Kids</button>
+                        <button type="button" class="btn btn-danger btn-lg">Written by Kids</button>
                     </a>
                 </div>
                 <div class="carousel-caption"></div>

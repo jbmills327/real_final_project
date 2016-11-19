@@ -16,11 +16,11 @@ header {
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
-    color: #5d0270;
-    text-shadow: 3px 3px 1px #d3b6ef;
 }
 
 #main .quoteOfTheDay {
+    color: #5d0270;
+    text-shadow: 3px 3px 1px #d3b6ef;
     position: absolute;
     top: 40%;
     left: 50%;
@@ -34,6 +34,8 @@ header {
 
 #main .byLine {
     position: absolute;
+    color: #5d0270;
+    text-shadow: 3px 3px 1px #d3b6ef;
     top: 65%;
     left: 60%;
     transform: translate(-50%, -50%);
@@ -46,14 +48,16 @@ header {
 
 .title {
     position: absolute;
-    font-family: "Indie Flower", cursive;
-    /*color: #056817;*/
-    background: linear-gradient(to right, #056817, #72cc82, #056817);
+    /*font-family: 'Cormorant Garamond', serif;*/
+    font-family: 'Lobster Two', cursive;
+    color: #4b028e;
+    text-shadow: 3px 3px 1px #d3b6ef;
+    /*background: linear-gradient(to right, #056817, #72cc82, #056817);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     font-size: 5em;
     top: 1%;
-    left: 20%;
+    left: 10%;
 }
 
 
@@ -80,16 +84,19 @@ header {
 
 .goblinQuestBook {
     position: absolute;
-    background-image: url("./resources/paper.jpg");
+    /*background-image: url("./resources/paper.jpg");*/
     background-size: cover;
-    /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
+    color: #dd0d52;
+    text-shadow: 1px 1px 2px #4b028e;
+    font-family: 'Cormorant Garamond', serif;
+    background: radial-gradient(#04f2e6, #18cec5, #028e87);
     width: 75%;
     height: 75%;
     top: 50vh;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px white, 5px 5px 4px black, -3px -3px 3px white, -5px -5px 4px black;
 }
 
 
@@ -105,10 +112,10 @@ header {
 
 .goblinQuestBook p {
     position: absolute;
+    font-size: 2em;
     top: 40%;
     left: 40%;
     transform: translate(-50%, -50%);
-    font-size: 20px;
 }
 
 
@@ -124,9 +131,11 @@ header {
 
 /*Styling and positioning the button for choice 1*/
 
-.choiceOne button {
+.choiceOneButton {
     margin: 10px;
-    box-shadow: 3px 3px 3px gray;
+    background-color: #4b028e;
+    color: white;
+    box-shadow: 2px 2px 2px white;
 }
 
 
@@ -147,18 +156,12 @@ header {
 
 .reset {
     position: absolute;
+    background-color: #dd0d52;
+    color: white;
     top: 85%;
     left: 45%;
     text-align: center;
-    box-shadow: 3px 3px 3px lightgray;
-}
-
-
-/*Styling and positioning the button for choice 2*/
-
-.choiceTwo button {
-    margin: 10px;
-    box-shadow: 3px 3px 3px lightgray;
+    box-shadow: 3px 3px 3px white;
 }
 
 .thunderGoblinOne {
@@ -167,7 +170,7 @@ header {
     height: 224px;
     top: 20%;
     left: 80%;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
 }
 
 .anotherGoblin {
@@ -220,7 +223,9 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        color: #dd0d52;
+        text-shadow: 1px 1px 2px #4b028e;
+        font-family: 'Cormorant Garamond', serif;
         width: 100vw;
         height: 70vh;
         /*top: 50vh;
@@ -231,8 +236,9 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
-        /*color: #056817;*/
+        font-family: 'Lobster Two', cursive;
+        color: #4b028e;
+        text-shadow: 3px 3px 1px #d3b6ef;
         background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -327,7 +333,9 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        color: #dd0d52;
+        text-shadow: 1px 1px 2px #4b028e;
+        font-family: 'Cormorant Garamond', serif;
         width: 100vw;
         height: 80vh;
         /*top: 50vh;
@@ -338,8 +346,9 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
-        /*color: #056817;*/
+        font-family: 'Lobster Two', cursive;
+        color: #4b028e;
+        text-shadow: 3px 3px 1px #d3b6ef;
         background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

@@ -19,24 +19,36 @@ header {
 
 #main h1 {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 7%;
-    background: linear-gradient(to right, #0be5de, #bedbe0, #0be5de);
+    color: #00ddff;
+    text-shadow: 2px 2px 2px #006572, -2px -2px 2px #006572, 4px 4px 7px #002126, -4px -4px 7px #002126;
+    /*background: linear-gradient(to right, #0be5de, #bedbe0, #0be5de);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Fredericka the Great", cursive;
+    -webkit-text-fill-color: transparent;*/
+    font-family: 'Aclonica', sans-serif;
+}
+
+#main h3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    color: #00ddff;
+    text-shadow: 2px 2px 2px #006572, -2px -2px 2px #006572, 4px 4px 7px #002126, -4px -4px 7px #002126;
+    font-family: 'Aclonica', sans-serif;
 }
 
 .title {
     position: absolute;
-    font-family: "Indie Flower", cursive;
-    /*color: #056817;*/
-    background: linear-gradient(to right, #056817, #72cc82, #056817);
+    font-family: 'Delius Unicase', cursive;
+    color: #056817;
+    text-shadow: 2px 2px 2px #72cc82, 4px 4px 3px black;
+    /*background: linear-gradient(to right, #056817, #72cc82, #056817);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;*/
     font-size: 5em;
     top: 1%;
-    left: 20%;
+    left: 10%;
 }
 
 
@@ -65,6 +77,8 @@ header {
     position: absolute;
     background-image: url("./resources/paper.jpg");
     background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 2px black;
     /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
     width: 75%;
     height: 75%;
@@ -72,7 +86,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 7px;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px white, -3px -3px 3px white, 3px 3px 3px black, -3px -3px 3px black;
 }
 
 
@@ -107,9 +121,11 @@ header {
 
 /*Styling and positioning the button for choice 1*/
 
-.choiceOne button {
+.choiceOneButton {
     margin: 10px;
-    box-shadow: 3px 3px 3px gray;
+    box-shadow: 3px 3px 3px white;
+    background-color: #056817;
+    color: white;
 }
 
 
@@ -133,15 +149,9 @@ header {
     top: 85%;
     left: 45%;
     text-align: center;
-    box-shadow: 3px 3px 3px lightgray;
-}
-
-
-/*Styling and positioning the button for choice 2*/
-
-.choiceTwo button {
-    margin: 10px;
-    box-shadow: 3px 3px 3px lightgray;
+    background-color: red;
+    color: white;
+    box-shadow: 3px 3px 3px white;
 }
 
 .thunderGoblinOne {
@@ -203,6 +213,8 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
+        color: white;
+        text-shadow: 2px 2px 2px black;
         background: radial-gradient(white, #f9e0b1, #edcb8b);
         width: 100vw;
         height: 70vh;
@@ -214,11 +226,12 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
-        /*color: #056817;*/
-        background: linear-gradient(to right, #056817, #72cc82, #056817);
+        font-family: 'Delius Unicase', cursive;
+        color: #056817;
+        text-shadow: 2px 2px 2px #72cc82, 4px 4px 3px black;
+        /*background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
         font-size: 5em;
         top: 1%;
         left: 20%;
@@ -240,10 +253,19 @@ header {
         /*text-align: center;*/
     }
     /*Styling and positioning the button for choice 1*/
-    .choiceOne button {
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px gray;
+    .choiceOneButton {
+        margin: 10px;
+        box-shadow: 3px 3px 3px white;
+        background-color: #056817;
+        color: white;
         left: 0;
+    }
+    .choiceTwoButton {
+        margin: 10px;
+        box-shadow: 3px 3px 3px white;
+        background-color: #056817;
+        color: white;
+        left: 2%;
     }
     /*Styling and positioning the text for choice 2 */
     .choiceTwo {
@@ -262,13 +284,6 @@ header {
         top: 85%;
         left: 50%;
         text-align: center;
-    }
-    /*Styling and positioning the button for choice 2*/
-    .choiceTwo button {
-        position: relative;
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px gray;
-        left: 2%;
     }
     .thunderGoblinOne {
         position: absolute;
@@ -310,6 +325,8 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
+        color: white;
+        text-shadow: 2px 2px 2px black;
         background: radial-gradient(white, #f9e0b1, #edcb8b);
         width: 100vw;
         height: 80vh;
@@ -321,11 +338,12 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
-        /*color: #056817;*/
-        background: linear-gradient(to right, #056817, #72cc82, #056817);
+        font-family: 'Delius Unicase', cursive;
+        color: #056817;
+        text-shadow: 2px 2px 2px #72cc82, 4px 4px 3px black;
+        /*background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;*/
         font-size: 3em;
         top: 1%;
         left: 20%;
@@ -347,9 +365,11 @@ header {
         /*text-align: center;*/
     }
     /*Styling and positioning the button for choice 1*/
-    .choiceOne button {
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px lightgray;
+    .choiceOneButton {
+        margin: 10px;
+        box-shadow: 3px 3px 3px white;
+        background-color: #056817;
+        color: white;
         left: 0;
     }
     /*Styling and positioning the text for choice 2 */
@@ -370,11 +390,11 @@ header {
         left: 43%;
         text-align: center;
     }
-    /*Styling and positioning the button for choice 2*/
-    .choiceTwo button {
-        position: relative;
-        /*margin: 10px;*/
-        box-shadow: 3px 3px 3px lightgray;
+    .choiceTwoButton {
+        margin: 10px;
+        box-shadow: 3px 3px 3px white;
+        background-color: #056817;
+        color: white;
         left: 2%;
     }
     .thunderGoblinOne {

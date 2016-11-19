@@ -16,8 +16,8 @@ header {
     background-position: center;
     background-attachment: fixed;
     overflow: hidden;
-    color: #00edff;
-    text-shadow: 3px 3px 1px #0061ff, 5px 5px 2px #00edff;
+    /*color: #00edff;
+    text-shadow: 3px 3px 1px #0061ff, 5px 5px 2px #00edff;*/
 }
 
 #main .quoteOfTheDay {
@@ -30,6 +30,8 @@ header {
     -webkit-text-fill-color: transparent;*/
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 3em;
+    color: #00edff;
+    text-shadow: 3px 3px 1px #0061ff, 5px 5px 2px #00edff;
 }
 
 #main .byLine {
@@ -42,18 +44,22 @@ header {
     -webkit-text-fill-color: transparent;*/
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 3em;
+    color: #00edff;
+    text-shadow: 3px 3px 1px #0061ff, 5px 5px 2px #00edff;
 }
 
 .title {
     position: absolute;
-    font-family: "Indie Flower", cursive;
-    /*color: #056817;*/
-    background: linear-gradient(to right, #056817, #72cc82, #056817);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 5em;
+    /*font-family: "Indie Flower", cursive;*/
+    font-family: 'Delius Unicase', cursive;
+    color: yellow;
+    text-shadow: 1px 1px 1px white, 3px 3px 2px black;
+    /*background: linear-gradient(to right, #056817, #72cc82, #056817);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    font-size: 4em;
     top: 1%;
-    left: 20%;
+    left: 10%;
 }
 
 
@@ -80,9 +86,11 @@ header {
 
 .goblinQuestBook {
     position: absolute;
-    background-image: url("./resources/paper.jpg");
+    color: #23eafc;
+    text-shadow: 2px 2px 2px black;
+    /*background-image: url("./resources/paper.jpg");*/
     background-size: cover;
-    /*background: radial-gradient(white, #f9e0b1, #edcb8b);*/
+    background: radial-gradient(#e2b3df, purple, magenta);
     width: 75%;
     height: 75%;
     top: 50vh;
@@ -127,6 +135,8 @@ header {
 .choiceOne button {
     margin: 10px;
     box-shadow: 3px 3px 3px gray;
+    background-color: #4301ad;
+    color: white;
 }
 
 
@@ -159,6 +169,8 @@ header {
 .choiceTwo button {
     margin: 10px;
     box-shadow: 3px 3px 3px lightgray;
+    background-color: #4301ad;
+    color: white;
 }
 
 .thunderGoblinOne {
@@ -220,7 +232,7 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        background: radial-gradient(#e2b3df, purple, magenta);
         width: 100vw;
         height: 70vh;
         /*top: 50vh;
@@ -231,14 +243,17 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
+        font-family: 'Delius Unicase', cursive;
+        color: yellow;
+        text-shadow: 1px 1px 1px white, 3px 3px 2px black;
+        /*font-family: "Indie Flower", cursive;*/
         /*color: #056817;*/
-        background: linear-gradient(to right, #056817, #72cc82, #056817);
+        /*background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 5em;
+        -webkit-text-fill-color: transparent;*/
+        font-size: 4em;
         top: 1%;
-        left: 20%;
+        left: 10%;
     }
     .goblinQuestBook p {
         position: absolute;
@@ -327,7 +342,7 @@ header {
     /*Styling the actual pages for the books*/
     .goblinQuestBook {
         position: absolute;
-        background: radial-gradient(white, #f9e0b1, #edcb8b);
+        background: radial-gradient(#e2b3df, purple, magenta);
         width: 100vw;
         height: 80vh;
         /*top: 50vh;
@@ -338,14 +353,17 @@ header {
     }
     .title {
         position: absolute;
-        font-family: "Indie Flower", cursive;
+        font-family: 'Delius Unicase', cursive;
+        color: yellow;
+        text-shadow: 1px 1px 1px white, 3px 3px 2px black;
+        /*font-family: "Indie Flower", cursive;
         /*color: #056817;*/
-        background: linear-gradient(to right, #056817, #72cc82, #056817);
+        /*background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 3em;
+        -webkit-text-fill-color: transparent;*/
+        */ font-size: 3em;
         top: 1%;
-        left: 20%;
+        left: 10%;
     }
     .goblinQuestBook p {
         position: absolute;

@@ -301,8 +301,11 @@ function mainController() {
         main.showGoblinQuest = !main.showGoblinQuest;
         main.hideLevelOneThumbs = !main.hideLevelOneThumbs;
     };
+    main.hideTheQuote = function() {
+        main.showQuote = false;
+    }
     main.showTheQuote = function() {
-        main.showQuote = !main.showQuote;
+        main.showQuote = true;
     }
 
 }

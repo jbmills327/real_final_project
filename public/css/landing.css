@@ -20,6 +20,28 @@ body form {
     font-family: 'Eczar', serif;
 }
 
+.mainTitle {
+    position: absolute;
+    font-family: 'Prociono', serif;
+    color: red;
+    font-size: 4em;
+    text-shadow: 2px 2px 2px black, 3px 3px 10px white;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+}
+
+.subTitle {
+    position: absolute;
+    color: red;
+    font-family: 'Prociono', serif;
+    text-shadow: 2px 2px 2px black, 3px 3px 10px white;
+    font-size: 3em;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+}
+
 .loginButton {
     position: absolute;
     bottom: -40%;

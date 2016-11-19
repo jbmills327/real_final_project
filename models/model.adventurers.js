@@ -2,11 +2,15 @@ var mongoose = require("mongoose");
 
 AdventurerSchema = new mongoose.Schema({
     name: String,
-    age: Number,
+    class: String,
     race: String,
     level: {
         type: Number,
         default: 1
+    },
+    xp: {
+        type: Number,
+        default: 0
     },
     createdBy: {
         type: mongoose.Schema.ObjectId,

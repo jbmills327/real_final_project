@@ -26,6 +26,7 @@ function closeNestedNav() {
 }
 
 
+
 //This is all for the parralax effect
 
 // This is the fix for the scrolling issue
