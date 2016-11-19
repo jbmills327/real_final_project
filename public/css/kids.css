@@ -93,7 +93,6 @@ header {
     background-image: url("./resources/kidsLevel1Background.jpg");
     background-size: cover;
     background-position: bottom;
-    text-align: center;
     /*background: radial-gradient(#e2b3df, purple, magenta);*/
     width: 75%;
     height: 75%;
@@ -107,8 +106,10 @@ header {
 
 /*Positioning the button within the reading pane*/
 
-.goblinQuestBook button {
+.goblinQuestBook .close {
     position: absolute;
+    /*top: 10%;
+    left: 10%;*/
     padding: 10px 10px 10px 20px;
 }
 
@@ -129,14 +130,17 @@ header {
 .choiceOne {
     position: absolute;
     top: 75%;
-    left: 5%;
-    text-align: center;
+    left: 13%;
+    /*text-align: center;*/
 }
 
 
 /*Styling and positioning the button for choice 1*/
 
 .choiceOneButton {
+    position: absolute;
+    top: 75%;
+    left: 13%;
     margin: 10px;
     box-shadow: 3px 3px 3px white;
     background-color: #cd1e36;
