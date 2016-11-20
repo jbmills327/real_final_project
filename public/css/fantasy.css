@@ -234,7 +234,7 @@ header {
         -webkit-text-fill-color: transparent;*/
         font-size: 5em;
         top: 1%;
-        left: 20%;
+        left: 10%;
     }
     .goblinQuestBook p {
         position: absolute;
@@ -278,12 +278,14 @@ header {
         position: absolute;
         top: 75%;
         left: 50%;
+        transform: translate(-50%, -50%);
     }
     .reset {
         position: absolute;
         top: 85%;
         left: 50%;
         text-align: center;
+        transform: translate(-50%, -50%);
     }
     .thunderGoblinOne {
         position: absolute;
@@ -344,9 +346,10 @@ header {
         /*background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;*/
-        font-size: 3em;
+        font-size: 2em;
+        text-align: center;
         top: 1%;
-        left: 20%;
+        left: 15%;
     }
     .goblinQuestBook p {
         position: absolute;
@@ -376,18 +379,18 @@ header {
     .choiceTwo {
         position: absolute;
         top: 80%;
-        left: 65%;
-        /*text-align: center;*/
+        left: 60%;
+        text-align: center;
     }
     .playTTS {
         position: absolute;
-        top: 20%;
+        top: 75%;
         left: 40%;
     }
     .reset {
         position: absolute;
-        top: 85%;
-        left: 43%;
+        top: 15%;
+        left: 40%;
         text-align: center;
     }
     .choiceTwoButton {

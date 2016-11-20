@@ -76,3 +76,87 @@ body form {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+/*Media Query to style for medium screens*/
+
+@media(max-width: 770px) {
+    /*Authbox on Medium screens*/
+    .authBox {
+        position: relative;
+        /*opacity: 0.6;*/
+        height: 45%;
+        width: 75vw;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /*Subtitle on Medium screens*/
+    .subTitle {
+        position: absolute;
+        color: red;
+        font-family: 'Prociono', serif;
+        text-align: center;
+        text-shadow: 2px 2px 2px black, 3px 3px 10px white;
+        font-size: 3em;
+        left: 50%;
+        bottom: 5%;
+        transform: translate(-50%, -50%);
+    }
+    /*Maintitle on Medium screens*/
+    .mainTitle {
+        position: absolute;
+        text-align: center;
+        font-family: 'Prociono', serif;
+        color: red;
+        font-size: 4em;
+        text-shadow: 2px 2px 2px black, 3px 3px 10px white;
+        left: 50%;
+        top: 7%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/*Media Query to style for phones and smaller devices*/
+
+@media(max-width: 440px) {
+    /*Authbox on smaller screens*/
+    .authBox {
+        position: relative;
+        /*opacity: 0.6;*/
+        height: 55%;
+        width: 100vw;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    /*Subtitle on smaller screens*/
+    .subTitle {
+        position: absolute;
+        color: red;
+        font-family: 'Prociono', serif;
+        text-align: center;
+        text-shadow: 2px 2px 2px black, 3px 3px 10px white;
+        font-size: 2em;
+        left: 50%;
+        bottom: -2%;
+        transform: translate(-50%, -50%);
+    }
+    /*Maintitle on Smaller screens*/
+    .mainTitle {
+        position: absolute;
+        text-align: center;
+        font-family: 'Prociono', serif;
+        color: red;
+        font-size: 2em;
+        text-shadow: 2px 2px 2px black, 3px 3px 10px white;
+        left: 50%;
+        top: 7%;
+        transform: translate(-50%, -50%);
+    }
+}

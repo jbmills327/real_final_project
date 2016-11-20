@@ -386,4 +386,22 @@ footer a {
     footer h2 {
         font-size: 20px;
     }
+    /*setting size for carousel photos*/
+    .item {
+        height: 250px;
+    }
+    .item img {
+        height: 100%;
+        width: 100vw;
+        position: absolute;
+        /*top: 0;
+        left: 0;*/
+        min-width: 100%;
+        max-width: none;
+        min-height: 250px;
+    }
+    .carouselPhotos {
+        width: 100vw;
+        height: 100%;
+    }
 }
