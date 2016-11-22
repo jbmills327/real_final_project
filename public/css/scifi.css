@@ -220,7 +220,36 @@ header {
 
 /*This is the styling to adjust for medium sized screens*/
 
-@media(max-width: 770px) {
+@media screen and (max-width: 770px) {
+    /*Styling the quote body*/
+    #main .quoteOfTheDay {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 5em;
+        color: #c90404;
+        /*color: black;*/
+        text-shadow: 2px 2px 2px #eaff0a, 4px 4px 3px #ff8800, 6px 6px 4px white;
+        /*background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+        font-family: "Ravi Prakash", cursive;
+    }
+    /*Styling the byline*/
+    #main .byLine {
+        position: absolute;
+        top: 65%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        font-size: 4em;
+        color: #c90404;
+        text-shadow: 2px 2px 2px #eaff0a, 4px 4px 3px #ff8800, 6px 6px 4px white;
+        /*background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+        font-family: "Ravi Prakash", cursive;
+    }
     .bookImage {
         top: 50vh;
         left: 20%;
@@ -293,6 +322,7 @@ header {
     }
     .playTTS {
         position: absolute;
+        background-color: white;
         top: 75%;
         left: 50%;
     }
@@ -332,7 +362,40 @@ header {
 
 /*This is the media query for styling on smaller screens*/
 
-@media(max-width: 440px) {
+@media screen and (max-width: 440px) {
+    /*Styling the quote body*/
+    #main .quoteOfTheDay {
+        position: absolute;
+        top: 40%;
+        padding: 30px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        color: #c90404;
+        /*color: black;*/
+        text-shadow: 2px 2px 2px #eaff0a, 4px 4px 3px #ff8800, 6px 6px 4px white;
+        /*background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+        font-family: "Ravi Prakash", cursive;
+        width: 100vw;
+    }
+    /*Styling the byline*/
+    #main .byLine {
+        position: absolute;
+        width: 100vw;
+        padding: 15px;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+        color: #c90404;
+        text-shadow: 2px 2px 2px #eaff0a, 4px 4px 3px #ff8800, 6px 6px 4px white;
+        /*background: linear-gradient(to right, #c90404, #eaff0a, #c90404);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+        font-family: "Ravi Prakash", cursive;
+    }
     .bookImage {
         top: 50vh;
         left: 20%;
@@ -371,9 +434,9 @@ header {
         background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 3em;
+        font-size: 2em;
         top: 1%;
-        left: 20%;
+        left: 25%;
     }
     .goblinQuestBook p {
         position: absolute;
@@ -401,17 +464,18 @@ header {
     .choiceTwo {
         position: absolute;
         top: 80%;
-        left: 65%;
+        left: 55%;
         /*text-align: center;*/
     }
     .playTTS {
         position: absolute;
+        background-color: white;
         top: 20%;
         left: 40%;
     }
     .reset {
         position: absolute;
-        top: 85%;
+        top: 70%;
         left: 43%;
         text-align: center;
     }

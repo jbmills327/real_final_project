@@ -211,7 +211,7 @@ header {
 
 /*This is the styling to adjust for medium sized screens*/
 
-@media(max-width: 770px) {
+@media screen and (max-width: 770px) {
     .bookImage {
         top: 50vh;
         left: 20%;
@@ -321,7 +321,34 @@ header {
 
 /*This is the media query for styling on smaller screens*/
 
-@media(max-width: 440px) {
+@media screen and (max-width: 440px) {
+    #main .quoteOfTheDay {
+        color: #c21331;
+        text-shadow: 1px 1px 2px #3dd0b6, 3px 3px 1px black;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*background: linear-gradient(to right, #4e0493, #d3b6ef);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+        /*font-family: "Lobster", cursive;*/
+        font-family: 'Acme', sans-serif;
+        font-size: 2em;
+    }
+    #main .byLine {
+        position: absolute;
+        color: #c21331;
+        text-shadow: 1px 1px 2px #3dd0b6, 3px 3px 1px black;
+        top: 75%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        /*background: linear-gradient(to right, #5d0270 60%, #f0d9f4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;*/
+        font-family: "Acme", sans-serif;
+        font-size: 2em;
+    }
     .bookImage {
         top: 50vh;
         left: 20%;
@@ -357,7 +384,8 @@ header {
         background: linear-gradient(to right, #056817, #72cc82, #056817);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 3em;
+        font-size: 2em;
+        text-align: center;
         top: 1%;
         left: 20%;
     }
