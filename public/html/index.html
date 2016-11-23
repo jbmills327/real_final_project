@@ -7,6 +7,8 @@
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
     <link rel="stylesheet" href="./css/main.css">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Trirong" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
@@ -114,8 +116,7 @@
         <button type="button" class="btn btn-default btn-lg openMenu" onclick="openNav()">
           <span class = "glyphicon glyphicon-menu-hamburger" aria-hidden = "true"></span>MENU
         </button>
-
-        <h1 ng-cloak>{{ main.greeting }}</h1>
+        <h1 ng-cloak>{{ main.greeting.toUpperCase() }}</h1>
         <div class="dragon"></div>
         <div class="large-dragon"></div>
 

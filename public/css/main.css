@@ -19,6 +19,15 @@ header {
     overflow: hidden;
 }
 
+#main h1 {
+    position: absolute;
+    z-index: 10;
+    font-family: 'Trirong', serif;
+    color: black;
+    text-shadow: 2px 2px 1px white;
+    text-align: center;
+}
+
 
 /*Styling for dragon for parallax effect*/
 

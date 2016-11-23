@@ -107,13 +107,41 @@ function mainController($http, adventFactory) {
     }
 
     main.pushAdventurer = function() {
+        main.adjective;
+
+        switch (main.choose.class) {
+            case "Warrior":
+                main.adjective = "brave";
+                break;
+            case "Princess":
+                main.adjective = "beautiful";
+                break;
+            case "Cleric":
+                main.adjective = "faithful";
+                break;
+            case "Wizard":
+                main.adjective = "wise";
+                break;
+            case "Thief":
+                main.adjective = "Sneaky";
+                break;
+            case "Prince":
+                main.adjective = "handsome";
+                break;
+            case "Druid":
+                main.adjective = "wild";
+                break;
+            default:
+                main.adjective = "heroic";
+                break;
+        }
         // main.chooseTheAdent.push(main.choose);
-        main.greeting = "Hello " + main.choose.name + ", are you ready for an adventure?";
+        main.greeting = "Hello " + main.choose.name + ", the " + main.adjective + " " + main.choose.race + " " + main.choose.class + ". Are you ready for an adventure?";
         $('#adventModal').modal('hide');
     };
 
 
-
+    "Warrior", "Cleric", "Wizard", "Thief", "Princess", "Prince", "Druid"
 
 
 
