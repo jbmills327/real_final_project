@@ -34,6 +34,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
     font-family: "Ravi Prakash", cursive;
+    z-index: 0;
 }
 
 
@@ -51,6 +52,7 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;*/
     font-family: "Ravi Prakash", cursive;
+    z-index: 0;
 }
 
 .title {

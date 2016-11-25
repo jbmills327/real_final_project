@@ -31,6 +31,7 @@ header {
     /*font-family: "Lobster", cursive;*/
     font-family: 'Acme', sans-serif;
     font-size: 3em;
+    z-index: 0;
 }
 
 #main .byLine {
@@ -45,6 +46,7 @@ header {
     -webkit-text-fill-color: transparent;*/
     font-family: "Acme", sans-serif;
     font-size: 2em;
+    z-index: 0;
 }
 
 .title {

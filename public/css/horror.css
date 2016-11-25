@@ -34,6 +34,7 @@ header {
     -webkit-text-fill-color: transparent;*/
     font-family: 'Creepster', cursive;
     /*font-family: "Fredericka the Great", cursive;*/
+    z-index: 0;
 }
 
 
@@ -52,6 +53,7 @@ header {
     -webkit-text-fill-color: transparent;*/
     /*font-family: "Fredericka the Great", cursive;*/
     font-family: 'Creepster', cursive;
+    z-index: 0;
 }
 
 

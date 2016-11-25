@@ -58,45 +58,45 @@ function mainController() {
     // These are the paths to assign text based on the page and choices made.
     main.paths = [{
         uniqueId: 0,
-        description: "Koen is the strongest boy in the whole world.  His mommy and daddy love him very very much.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
+        description: "The goblin awoke with a start.  He looked at the clock on the nightstand and saw that he overslept and was late for school.  Should he brush his teeth, or get dressed?",
+        choiceOne: "Brush Teeth",
+        choiceTwo: "Get Dressed",
         active: true
     }, {
         uniqueId: 1,
-        description: "While it is universally accepted that little Rob is Big Rob and big Rob is little Rob, there is still much debate as to which one is Handsome Rob.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
+        description: "The goblin brushed his teeth quickly.  He got dressed, grabbed his book bag and ran to the bus stop.  He got to the bus stop and saw the bus leaving.  Should he chase the bus or walk to school?",
+        choiceOne: "Chase Bus",
+        choiceTwo: "Walk",
         active: false
     }, {
         uniqueId: 2,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
+        description: "The goblin got dressed quickly, grabbed his book bag, and ran to the bus stop just as the bus arrived.  He got on and looked for a seat.  Should he sit by himself or with his friend Hector.",
+        choiceOne: "Sit Alone",
+        choiceTwo: "With Hector",
         active: false
     }, {
         uniqueId: 3,
-        description: "In contrast there is no debate as to who is handsome Steve.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
+        description: "The goblin ran after the bus, but wasn’t quick enough.  The bus pulled away.  The goblin noticed a bicycle on the ground  Should the goblin ride the bike or walk?",
+        choiceOne: "Ride Bike",
+        choiceTwo: "Walk",
         active: false
     }, {
         uniqueId: 4,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
+        description: "The goblin walked toward his school.  As he walked he noticed a puppy waving her tail happily. Should the goblin pet the puppy or continue walking?",
+        choiceOne: "Pet Puppy",
+        choiceTwo: "Keep Walking",
         active: false
     }, {
         uniqueId: 5,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
+        description: "The goblin sat down behind the bus driver.  He opened his backpack and took out an apple.  Should he eat the apple or save it for later?",
+        choiceOne: "Eat Apple",
+        choiceTwo: "Save It",
         active: false
     }, {
         uniqueId: 6,
-        description: "The average page will only have one to two sentences.  This should be more than enough room for that to occur.",
-        choiceOne: "Choice One",
-        choiceTwo: "Choice Two",
+        description: "The goblin sat with Hector and began talking.  Hector asked him what video game he wanted to play after school.  Should the goblin tell Hector he wants to play Call of Duty or Bioshock?",
+        choiceOne: "Call Of Duty",
+        choiceTwo: "Bioshock",
         active: false
     }, {
         uniqueId: 7,

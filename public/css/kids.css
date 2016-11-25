@@ -32,6 +32,7 @@ header {
     font-size: 3em;
     color: #00edff;
     text-shadow: 3px 3px 1px #0061ff, 5px 5px 2px #00edff;
+    z-index: 0;
 }
 
 #main .byLine {
@@ -46,6 +47,7 @@ header {
     font-size: 2em;
     color: #00edff;
     text-shadow: 3px 3px 1px #0061ff, 5px 5px 2px #00edff;
+    z-index: 0;
 }
 
 .title {
@@ -139,6 +141,7 @@ header {
 
 .choiceOneButton {
     position: absolute;
+    text-align: center;
     top: 75%;
     left: 13%;
     margin: 10px;
